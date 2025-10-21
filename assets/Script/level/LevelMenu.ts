@@ -25,5 +25,10 @@ export default class LevelSelect extends cc.Component {
             cc.director.loadScene('Game');
         }
     }
+
+    public backToMenu():void{
+        // 返回主菜单
+        cc.director.loadScene('Menu');
+    }
 }
 

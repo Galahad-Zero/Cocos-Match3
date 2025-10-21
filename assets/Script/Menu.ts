@@ -41,13 +41,11 @@ export default class Menu extends cc.Component {
 
     showSetting():void{
         // 显示设置界面
-        // cc.director.loadScene('SettingMenu');
         this.gameSetting.node.active = true;
     }
 
     closeSetting():void{
         // 关闭设置界面
-        // cc.director.loadScene('Menu');
         this.gameSetting.node.active = false;
     }
 
