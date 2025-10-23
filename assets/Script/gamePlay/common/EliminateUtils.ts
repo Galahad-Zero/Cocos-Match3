@@ -293,7 +293,10 @@ export function releaseSpecialBlock(
                 const rowBlocks = gameCheckInfo.gameMapInfo[row];
                 for (let col = 0; col < rowBlocks.length; col++) {
                     const block = rowBlocks[col];
-                    if (block.type === targetType) {
+                    if (
+                        block.type === targetType &&
+                        block.special !== BlockSpecialType.SPECIAL_BOOM
+                    ) {
                         effectLocations.push({
                             row,
                             column: col,

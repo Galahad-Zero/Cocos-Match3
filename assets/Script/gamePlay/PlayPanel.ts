@@ -5,6 +5,7 @@ import { getRandomBlockConfig, isLocationEqual } from './common/GameUtils';
 import {
     BlockConfig,
     BlockDropInfo,
+    BlockSpecialType,
     BlockType,
     GameCheckInfo,
     LevelConfig,
@@ -139,9 +140,13 @@ export default class PlayPanel extends cc.Component {
             location1: Location,
             location2: Location
         ): boolean => {
+            const config1 = mapInfo[location1.row][location1.column];
+            const config2 = mapInfo[location2.row][location2.column];
+            // 特殊炸弹方块不能与普通方块相连
             return (
-                mapInfo[location1.row][location1.column].type ===
-                mapInfo[location2.row][location2.column].type
+                config1.type === config2.type &&
+                config1.special !== BlockSpecialType.SPECIAL_BOOM &&
+                config2.special !== BlockSpecialType.SPECIAL_BOOM
             );
         };
 

@@ -28,209 +28,6 @@ import AudioMgr from '../AudioMgr';
 
 const { ccclass, property } = cc._decorator;
 
-const testLevelConfig: LevelConfig = {
-    stepLimit: 10,
-    targetScore: 100,
-    gameMap: {
-        width: 6,
-        height: 8,
-        blocks: {
-            '0,0': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '0,1': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '0,2': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '0,3': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '0,4': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '0,5': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '1,0': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '1,1': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '1,2': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '1,3': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '1,4': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '1,5': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '2,0': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '2,1': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '2,2': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '2,3': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '2,4': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '2,5': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '3,0': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '3,1': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '3,2': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '3,3': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '3,4': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '3,5': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '4,0': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '4,1': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '4,2': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '4,3': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '4,4': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '4,5': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '5,0': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '5,1': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '5,2': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '5,3': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '5,4': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '5,5': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '6,0': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '6,1': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '6,2': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '6,3': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '6,4': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '6,5': {
-                type: BlockType.BLOCK_TYPE_3,
-                special: BlockSpecialType.NONE,
-            },
-            '7,0': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '7,1': {
-                type: BlockType.BLOCK_TYPE_1,
-                special: BlockSpecialType.NONE,
-            },
-            '7,2': {
-                type: BlockType.BLOCK_TYPE_4,
-                special: BlockSpecialType.NONE,
-            },
-            '7,3': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-            '7,4': {
-                type: BlockType.BLOCK_TYPE_5,
-                special: BlockSpecialType.NONE,
-            },
-            '7,5': {
-                type: BlockType.BLOCK_TYPE_2,
-                special: BlockSpecialType.NONE,
-            },
-        },
-    },
-};
-
 @ccclass
 export default class GameMgr extends cc.Component {
     @property(PlayPanel)
@@ -415,6 +212,35 @@ export default class GameMgr extends cc.Component {
                 });
             }
         }
+        // 检查特殊炸弹方块
+        if (this._gameCheckInfo.swapBlocks) {
+            const [location1, location2] = this._gameCheckInfo.swapBlocks;
+            const blockConfig1 =
+                this._gameCheckInfo.gameMapInfo[location1.row][
+                    location1.column
+                ];
+            const blockConfig2 =
+                this._gameCheckInfo.gameMapInfo[location2.row][
+                    location2.column
+                ];
+            if (blockConfig1.special === BlockSpecialType.SPECIAL_BOOM) {
+                // 特殊炸弹方块，直接标记为可消除
+                this._gameCheckInfo.canEliminateCheckInfos.push({
+                    entryLocation: location2,
+                    eliminateBlockType: BlockSpecialType.NONE,
+                    contiguousLocations: [location1],
+                });
+            }
+            if (blockConfig2.special === BlockSpecialType.SPECIAL_BOOM) {
+                // 特殊炸弹方块，直接标记为可消除
+                this._gameCheckInfo.canEliminateCheckInfos.push({
+                    entryLocation: location1,
+                    eliminateBlockType: BlockSpecialType.NONE,
+                    contiguousLocations: [location2],
+                });
+            }
+        }
+
         if (this._gameCheckInfo.canEliminateCheckInfos.length > 0) {
             // 减少步数
             this._gameCheckInfo.swapBlocks && this.gameUI.decrementStepCount();

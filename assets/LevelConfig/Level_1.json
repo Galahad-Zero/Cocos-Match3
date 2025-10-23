@@ -1,6 +1,6 @@
 {
-  "stepLimit": 100,
-  "targetScore": 555100,
+  "stepLimit": 10,
+  "targetScore": 1000,
   "gameMap": {
     "width": 6,
     "height": 8,
