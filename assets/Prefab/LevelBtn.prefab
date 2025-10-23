@@ -25,10 +25,13 @@
     "_components": [
       {
         "__id__": 9
+      },
+      {
+        "__id__": 10
       }
     ],
     "_prefab": {
-      "__id__": 10
+      "__id__": 11
     },
     "_opacity": 255,
     "_color": {
@@ -406,6 +409,17 @@
     "_N$target": {
       "__id__": 2
     },
+    "_id": ""
+  },
+  {
+    "__type__": "f17d5ylaJdMV6RCIQiA9KAa",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "levelInfo": null,
     "_id": ""
   },
   {
