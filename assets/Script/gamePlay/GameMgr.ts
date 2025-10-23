@@ -1,4 +1,3 @@
-import BlockMgr from './BlockMgr';
 import PlayPanel from './PlayPanel';
 import { Direction, TOUCH_BLOCK_EVENT } from './GameConst';
 import TouchHandler, {
@@ -14,10 +13,8 @@ import {
     GameCheckInfo,
     LevelConfig,
     Location,
-} from './Types';
+} from './GameTypes';
 import { getSwapLocation, isNeighborLocation } from './common/GameUtils';
-import GameFsm, { GameState } from './GameFsm';
-import { stringifyLocation } from './common/Grid';
 import {
     releaseSpecialBlock,
     specialBlockGenerator,
@@ -25,6 +22,8 @@ import {
 import GameUI from './ui/GameUI';
 import EffectMgr from './effects/EffectMgr';
 import AudioMgr from '../AudioMgr';
+import BlockMgr from './block/BlockMgr';
+import GameFsm, { GameState } from './common/GameFsm';
 
 const { ccclass, property } = cc._decorator;
 

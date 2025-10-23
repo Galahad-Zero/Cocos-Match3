@@ -6,7 +6,7 @@
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
 import { EntryLevelEvent } from '../const';
-import { LevelConfig } from '../gamePlay/Types';
+import { LevelConfig } from '../gamePlay/GameTypes';
 
 const { ccclass, property } = cc._decorator;
 

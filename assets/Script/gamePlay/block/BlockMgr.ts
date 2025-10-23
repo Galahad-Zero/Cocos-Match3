@@ -1,6 +1,6 @@
-import BaseBlock from './block/BaseBlock';
-import { BlockConfig, BlockType } from './Types';
-import BlockStyleProperty from './block/BlockStyleProperty';
+import { BlockConfig, BlockType } from '../GameTypes';
+import BlockStyleProperty from './BlockStyleProperty';
+import BaseBlock from './BaseBlock';
 
 const { ccclass, property } = cc._decorator;
 

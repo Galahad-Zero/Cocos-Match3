@@ -1,5 +1,10 @@
 import { Direction, DirectionVector } from '../GameConst';
-import { BlockConfig, BlockSpecialType, BlockType, Location } from '../Types';
+import {
+    BlockConfig,
+    BlockSpecialType,
+    BlockType,
+    Location,
+} from '../GameTypes';
 
 const DirectionList = [
     Direction.UP,

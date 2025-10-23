@@ -1,6 +1,6 @@
 import BaseEffect from './BaseEffect';
 import SpineProperty from '../common/SpineProperty';
-import { BlockSpecialType, GameCheckInfo, Location } from '../Types';
+import { BlockSpecialType, GameCheckInfo, Location } from '../GameTypes';
 import Grid from '../common/Grid';
 import BaseBlock from '../block/BaseBlock';
 

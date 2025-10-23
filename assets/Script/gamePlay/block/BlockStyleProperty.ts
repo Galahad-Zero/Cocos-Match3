@@ -1,4 +1,4 @@
-import { BlockSpecialType, BlockType } from '../Types';
+import { BlockSpecialType, BlockType } from '../GameTypes';
 import SpineProperty from '../common/SpineProperty';
 
 const { ccclass, property } = cc._decorator;

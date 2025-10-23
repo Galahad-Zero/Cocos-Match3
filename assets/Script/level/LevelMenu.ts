@@ -7,7 +7,7 @@
 
 import AudioMgr from '../AudioMgr';
 import GameMgr from '../gamePlay/GameMgr';
-import { LevelConfig } from '../gamePlay/Types';
+import { LevelConfig } from '../gamePlay/GameTypes';
 import LevelBtn from './LevelBtn';
 
 const { ccclass, property } = cc._decorator;

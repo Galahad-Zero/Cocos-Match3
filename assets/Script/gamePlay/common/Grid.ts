@@ -1,5 +1,5 @@
 import { getNeighborLocations } from './GameUtils';
-import { Location } from '../Types';
+import { Location } from '../GameTypes';
 
 export function stringifyLocation(row: number, column: number): string {
     return `${row},${column}`;

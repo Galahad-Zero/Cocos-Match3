@@ -1,5 +1,4 @@
 import BaseBlock from './block/BaseBlock';
-import BlockMgr from './BlockMgr';
 import Grid, { parseLocation } from './common/Grid';
 import { getRandomBlockConfig, isLocationEqual } from './common/GameUtils';
 import {
@@ -10,8 +9,9 @@ import {
     GameCheckInfo,
     LevelConfig,
     Location,
-} from './Types';
+} from './GameTypes';
 import EffectMgr from './effects/EffectMgr';
+import BlockMgr from './block/BlockMgr';
 
 const { ccclass, property } = cc._decorator;
 

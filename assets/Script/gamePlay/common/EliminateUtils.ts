@@ -6,7 +6,7 @@ import {
     BlockSpecialType,
     EliminateCheckInfo,
     GameCheckInfo,
-} from '../Types';
+} from '../GameTypes';
 import { isLocationEqual } from './GameUtils';
 import { stringifyLocation } from './Grid';
 

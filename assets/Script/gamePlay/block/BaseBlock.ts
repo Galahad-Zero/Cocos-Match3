@@ -6,7 +6,7 @@
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
 import SpineProperty from '../common/SpineProperty';
-import { BlockConfig } from '../Types';
+import { BlockConfig } from '../GameTypes';
 import BlockStyleProperty from './BlockStyleProperty';
 
 const { ccclass, property } = cc._decorator;

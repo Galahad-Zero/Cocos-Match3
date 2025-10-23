@@ -1,4 +1,4 @@
-import { LevelConfig } from '../gamePlay/Types';
+import { LevelConfig } from '../gamePlay/GameTypes';
 
 const { ccclass, property, requireComponent } = cc._decorator;
 
