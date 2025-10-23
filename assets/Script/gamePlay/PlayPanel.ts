@@ -10,6 +10,7 @@ import {
     LevelConfig,
     Location,
 } from './Types';
+import EffectMgr from './effects/EffectMgr';
 
 const { ccclass, property } = cc._decorator;
 
@@ -49,11 +50,17 @@ export default class PlayPanel extends cc.Component {
 
     _grid: Grid<BaseBlock> = null;
     _blockMgr: BlockMgr = null;
+    _effectMgr: EffectMgr = null;
     _levelConfig: LevelConfig = null;
     _blockParentMap: Map<BlockType, cc.Node> = new Map();
 
-    public initGamePanel(levelConfig: LevelConfig, blockMgr: BlockMgr): void {
+    public initGamePanel(
+        levelConfig: LevelConfig,
+        blockMgr: BlockMgr,
+        effectMgr: EffectMgr
+    ): void {
         this._blockMgr = blockMgr;
+        this._effectMgr = effectMgr;
         this._levelConfig = levelConfig;
         // 初始化网格数据
         this.initGrid(levelConfig);
@@ -70,6 +77,7 @@ export default class PlayPanel extends cc.Component {
             this.cellSpacing
         );
         this.gridRootNode.setContentSize(this._grid.getGridSize());
+        this.node.setContentSize(this._grid.getGridSize());
     }
 
     protected initBlocks(): void {
@@ -225,7 +233,7 @@ export default class PlayPanel extends cc.Component {
         gameCheckInfo: GameCheckInfo,
         cd: () => void
     ): void {
-        // todo：消除动画 + 特效
+        // 消除方块
         const { canEliminateCheckInfos } = gameCheckInfo;
         for (const eliminateCheckInfo of canEliminateCheckInfos) {
             const { contiguousLocations } = eliminateCheckInfo;
@@ -234,7 +242,9 @@ export default class PlayPanel extends cc.Component {
                 this.putBlock(block, location);
             }
         }
-        cd && cd();
+        // 释放特效
+        this._effectMgr.effectHandler(this._grid, gameCheckInfo, cd);
+        // cd && cd();
     }
 
     public putBlock(block: BaseBlock, location: Location): void {
@@ -300,20 +310,21 @@ export default class PlayPanel extends cc.Component {
             }
         };
 
-        const nodeActionSeq1 = cc.sequence(
-            cc.moveTo(0.3, pos2),
-            cc.moveTo(0.3, pos1),
-            cc.callFunc(actionCd)
-        );
-
-        const nodeActionSeq2 = cc.sequence(
-            cc.moveTo(0.3, pos1),
-            cc.moveTo(0.3, pos2),
-            cc.callFunc(actionCd)
-        );
         // 交换、还原动画
-        block1.node.runAction(nodeActionSeq1);
-        block2.node.runAction(nodeActionSeq2);
+        cc.tween(block1.node)
+            .sequence(
+                cc.moveTo(0.3, pos2),
+                cc.moveTo(0.3, pos1),
+                cc.callFunc(actionCd)
+            )
+            .start();
+        cc.tween(block2.node)
+            .sequence(
+                cc.moveTo(0.3, pos1),
+                cc.moveTo(0.3, pos2),
+                cc.callFunc(actionCd)
+            )
+            .start();
     }
 
     public dropRandomBlocks(cd: (entryList: Array<Location>) => void): void {
@@ -397,7 +408,6 @@ export default class PlayPanel extends cc.Component {
                 });
             }
         }
-        console.log('----- blockDropInfos: ', blockDropInfos);
         // 方块掉落动画
         let step = 0;
         const actionCd = () => {
@@ -409,12 +419,9 @@ export default class PlayPanel extends cc.Component {
         for (const blockDropInfo of blockDropInfos) {
             const { block, dropTime, targetDropLocation } = blockDropInfo;
             const targetPos = this._grid.getCellPosition(targetDropLocation);
-            block.node.runAction(
-                cc.sequence(
-                    cc.moveTo(dropTime, targetPos),
-                    cc.callFunc(actionCd)
-                )
-            );
+            cc.tween(block.node)
+                .sequence(cc.moveTo(dropTime, targetPos), cc.callFunc(actionCd))
+                .start();
         }
     }
 
@@ -446,10 +453,9 @@ export default class PlayPanel extends cc.Component {
         blockConfig: BlockConfig,
         initPos?: cc.Vec2
     ): BaseBlock {
-        const block = this._blockMgr.getBlock(blockConfig);
-        this._grid.setCell(location, block);
         const blockParent = this.getBlockParent(blockConfig.type);
-        block.node.setParent(blockParent);
+        const block = this._blockMgr.getBlock(blockConfig, blockParent);
+        this._grid.setCell(location, block);
         block.node.setPosition(initPos || this._grid.getCellPosition(location));
         return block;
     }
@@ -463,5 +469,14 @@ export default class PlayPanel extends cc.Component {
 
     public isInBounds(location: Location): boolean {
         return this._grid.isInBounds(location);
+    }
+
+    public getLevelConfig(): LevelConfig {
+        return this._levelConfig;
+    }
+
+    public getAllBlock(): Array<BaseBlock> {
+        const blockList = this.gridRootNode.getComponentsInChildren(BaseBlock);
+        return blockList;
     }
 }

@@ -36,12 +36,18 @@ export default class BaseBlock extends cc.Component {
     }
 
     // 节点池获取
-    public reuse(config: BlockConfig, style: BlockStyleProperty): void {
+    public reuse(
+        config: BlockConfig,
+        style: BlockStyleProperty,
+        parent?: cc.Node
+    ): void {
         this._config = config;
         this._style = style;
         const targetStyle = this._style.getAnimationInfo(this._config.special);
         this.skeleton.skeletonData = targetStyle.skeletonData;
-        // this.skeleton.setToSetupPose();
+        if (parent) {
+            this.node.setParent(parent);
+        }
         this.skeleton.setAnimation(
             0,
             targetStyle.animation,

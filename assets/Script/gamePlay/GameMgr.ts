@@ -9,9 +9,8 @@ import {
     BlockConfig,
     BlockSpecialType,
     BlockType,
-    EliminateBlockInfo,
     EliminateCheckInfo,
-    EliminateType,
+    EliminateScore,
     GameCheckInfo,
     LevelConfig,
     Location,
@@ -23,6 +22,9 @@ import {
     releaseSpecialBlock,
     specialBlockGenerator,
 } from './common/EliminateUtils';
+import GameUI from './ui/GameUI';
+import EffectMgr from './effects/EffectMgr';
+import AudioMgr from '../AudioMgr';
 
 const { ccclass, property } = cc._decorator;
 
@@ -234,11 +236,20 @@ export default class GameMgr extends cc.Component {
     @property(PlayPanel)
     playPanel: PlayPanel = null;
 
+    @property(GameUI)
+    gameUI: GameUI = null;
+
     @property(TouchHandler)
     touchHandler: TouchHandler = null;
 
     @property(BlockMgr)
     blockMgr: BlockMgr = null;
+
+    @property(EffectMgr)
+    effectMgr: EffectMgr = null;
+
+    @property(AudioMgr)
+    audioMgr: AudioMgr = null;
 
     _selectedLocation: Location = null;
 
@@ -248,12 +259,20 @@ export default class GameMgr extends cc.Component {
     protected onLoad(): void {
         this._gameFsm = new GameFsm(GameState.READY);
         this._gameFsm.onStateChange(this.onStateChange.bind(this));
-        // this.initGamePanel(testLevelConfig);
         this.touchHandler.node.on(TOUCH_BLOCK_EVENT, this.onTouchEvent, this);
     }
 
+    protected start(): void {
+        this.audioMgr.playMusic();
+    }
+
     public initGamePanel(levelConfig: LevelConfig): void {
-        this.playPanel.initGamePanel(levelConfig, this.blockMgr);
+        this.playPanel.initGamePanel(
+            levelConfig,
+            this.blockMgr,
+            this.effectMgr
+        );
+        this.gameUI.initGameUI(0, levelConfig.stepLimit);
         // 初始化游戏面板后，转换到游玩状态
         this._gameFsm.changeState(GameState.PLAYING);
     }
@@ -291,8 +310,8 @@ export default class GameMgr extends cc.Component {
     }
 
     public onTouchEvent(event: TouchDetailEvent): void {
-        // 非玩家操作
-        if (!this._gameFsm.canPlayerOperate()) {
+        // 非玩家操作 或 没有步数
+        if (!this._gameFsm.canPlayerOperate() || !this.gameUI.haveStepCount()) {
             return;
         }
         // 玩家可操作
@@ -350,7 +369,10 @@ export default class GameMgr extends cc.Component {
         gameMapInfo[location2.row][location2.column] =
             gameMapInfo[location1.row][location1.column];
         gameMapInfo[location1.row][location1.column] = tempConfig;
+
         this._gameCheckInfo.swapBlocks = [location1, location2];
+        this.audioMgr.playSwapAudio();
+        // 减少步数
         // 转换到检查消除状态
         this._gameFsm.changeState(GameState.CHECKING);
         // 2. 规则检查
@@ -394,6 +416,8 @@ export default class GameMgr extends cc.Component {
             }
         }
         if (this._gameCheckInfo.canEliminateCheckInfos.length > 0) {
+            // 减少步数
+            this._gameCheckInfo.swapBlocks && this.gameUI.decrementStepCount();
             // 转换到消除状态
             this._gameFsm.changeState(GameState.ELIMINATING);
         } else {
@@ -405,19 +429,18 @@ export default class GameMgr extends cc.Component {
                     this._gameFsm.changeState(GameState.PLAYING);
                 });
             } else {
-                // 没有可消除方块 且 没有交换方块，转换到游玩状态
-                this._gameFsm.changeState(GameState.PLAYING);
+                // 没有可消除方块 且 没有交换方块，检查游戏是否结束
+                this.checkGameOver();
             }
         }
     }
 
     public onEliminating(): void {
         // 获取已经消除的方块
-        const alreadyEliminateBlocks: Set<Location> = new Set(
+        const alreadyEliminateBlocks: Array<Location> =
             this._gameCheckInfo.canEliminateCheckInfos.reduce((acc, info) => {
                 return acc.concat(info.contiguousLocations);
-            }, [] as Array<Location>)
-        );
+            }, [] as Array<Location>);
         // 消除方块,并释放特性
         for (const eliminateCheckInfo of this._gameCheckInfo
             .canEliminateCheckInfos) {
@@ -430,7 +453,35 @@ export default class GameMgr extends cc.Component {
                 this._gameCheckInfo
             );
         }
+        // 计算得分
+        let score = 0;
+        for (const eliminateCheckInfo of this._gameCheckInfo
+            .canEliminateCheckInfos) {
+            const blockCount = eliminateCheckInfo.contiguousLocations.length;
+            // 基础得分
+            score += EliminateScore.EliminateBlockScore * blockCount;
+            // 特殊得分
+            switch (eliminateCheckInfo.eliminateBlockType) {
+                case BlockSpecialType.ROW:
+                    score += EliminateScore.Base4RowScore;
+                    break;
+                case BlockSpecialType.COLUMN:
+                    score += EliminateScore.Base4ColumnScore;
+                    break;
+                case BlockSpecialType.BOOM:
+                    score += EliminateScore.Irregular5Score;
+                    break;
+                case BlockSpecialType.SPECIAL_BOOM:
+                    score += EliminateScore.Base5Score;
+                    break;
+            }
+        }
+        // 连锁加成
+        score *= this._gameCheckInfo.chainCount;
+        // 增加得分
+        this.gameUI.incrementScore(score);
         // 消除方块,并执行动画
+        this.effectMgr.playComboAudio(this._gameCheckInfo.chainCount);
         this.playPanel.eliminateBlocks(this._gameCheckInfo, () => {
             this._gameFsm.changeState(GameState.DROPPING);
         });
@@ -446,6 +497,8 @@ export default class GameMgr extends cc.Component {
         this.playPanel.dropRandomBlocks((entryList: Array<Location>) => {
             const baseGameCheckInfo = this.generatetBaseGameCheckInfo();
             baseGameCheckInfo.checkBlockEntry = entryList;
+            // 连锁次数 + 1
+            baseGameCheckInfo.chainCount = this._gameCheckInfo.chainCount + 1;
             this._gameCheckInfo = baseGameCheckInfo;
             console.log('drop check: ', this._gameCheckInfo);
             this._gameFsm.changeState(GameState.CHECKING);
@@ -453,15 +506,39 @@ export default class GameMgr extends cc.Component {
     }
 
     public onGameOver(): void {
-        // todo 显示游戏结束界面
-        // console.log('游戏状态游戏结束');
+        // 显示游戏结束界面
+        this.gameUI.showGameOverPanel();
+        this.audioMgr.stopMusic();
         this.touchHandler.setEnabled(false);
     }
 
     public onGameWin(): void {
-        // todo 显示过关界面
-        // console.log('游戏状态过关');
+        // 显示过关界面
+        this.gameUI.showGameWinPanel();
+        this.audioMgr.stopMusic();
         this.touchHandler.setEnabled(false);
+    }
+
+    /**
+     * 检查游戏是否结束
+     */
+    public checkGameOver(): void {
+        const curScore = this.gameUI.getScore();
+        const targetScore = this.playPanel.getLevelConfig().targetScore;
+        if (curScore >= targetScore) {
+            // 得分大于等于目标分数，游戏胜利
+            this._gameFsm.changeState(GameState.GAME_WIN);
+        }
+        // 检查游戏是否结束, 还有步数则继续游戏，否则游戏结束
+        else if (this.gameUI.haveStepCount()) {
+            const { chainCount } = this._gameCheckInfo;
+            this.effectMgr.playCommentAudio(chainCount - 1);
+            // 还有步数，继续游戏
+            this._gameFsm.changeState(GameState.PLAYING);
+        } else {
+            // 没有步数，游戏结束
+            this._gameFsm.changeState(GameState.GAME_OVER);
+        }
     }
 
     public backToLevelSelect(): void {
@@ -479,13 +556,15 @@ export default class GameMgr extends cc.Component {
             gameMapInfo,
             checkBlockEntry,
             swapBlocks: null,
+            chainCount: 1,
             canEliminateCheckInfos: canEliminateBlocks,
             eliminateScore,
             newSpecailBlocks,
         };
     }
 
-    // protected onDestroy(): void {
-    //     this.touchHandler.node.off(TOUCH_BLOCK_EVENT, this.onTouchEvent, this);
-    // }
+    protected onDestroy(): void {
+        cc.audioEngine.stopAllEffects();
+        cc.audioEngine.stopMusic();
+    }
 }

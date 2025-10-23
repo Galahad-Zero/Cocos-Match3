@@ -29,6 +29,14 @@ export enum EliminateType {
     IRREGULAR_5 = 'irregular_5', // 异形5连消
 }
 
+export enum EliminateScore {
+    EliminateBlockScore = 10, // 消除方块得分
+    Base4RowScore = 50, // 基础4连消行得分
+    Base4ColumnScore = 50, // 基础4连消列得分
+    Base5Score = 200, // 基础5连消得分
+    Irregular5Score = 100, // 异形5连消得分
+}
+
 // 游戏配置
 export interface GameConfig {
     level: string;
@@ -68,6 +76,7 @@ export interface GameCheckInfo {
     gameMapInfo: Array<Array<BlockConfig>>; // 游戏地图信息
     checkBlockEntry: Location[]; // 检查方块入口
     swapBlocks: [Location, Location] | null; // 交换方块, 如果为 null，则表示没有交换方块
+    chainCount: number; // 连锁次数
     eliminateScore: number; // 消除得分
     canEliminateCheckInfos: Array<EliminateCheckInfo>; // 可消除方块检查信息
     newSpecailBlocks: Record<string, BlockConfig>; // 新特殊方块

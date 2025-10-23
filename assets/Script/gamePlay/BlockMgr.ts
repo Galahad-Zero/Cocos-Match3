@@ -32,16 +32,16 @@ export default class BlockMgr extends cc.Component {
      * @param blockConfig 方块配置
      * @returns 方块
      */
-    public getBlock(blockConfig: BlockConfig): BaseBlock {
+    public getBlock(blockConfig: BlockConfig, parent?: cc.Node): BaseBlock {
         const blockStyle = this.getBlockStyle(blockConfig.type);
         if (!blockStyle) {
             return null;
         }
-        const block = this.getBlockLoop().get(blockConfig, blockStyle);
+        const block = this.getBlockLoop().get(blockConfig, blockStyle, parent);
         if (!block) {
             const newBlock = cc.instantiate(this.blockPrefab);
             const blockComp = newBlock.getComponent(BaseBlock);
-            blockComp.reuse(blockConfig, blockStyle);
+            blockComp.reuse(blockConfig, blockStyle, parent);
             return blockComp;
         }
         return block.getComponent(BaseBlock);

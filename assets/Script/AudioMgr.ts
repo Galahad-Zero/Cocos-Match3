@@ -5,7 +5,7 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class AudioMgr extends cc.Component {
@@ -15,33 +15,40 @@ export default class AudioMgr extends cc.Component {
     @property(cc.AudioClip)
     clickAudio: cc.AudioClip = null;
 
-    playMusic():void{
+    @property(cc.AudioClip)
+    swapAudio: cc.AudioClip = null;
+
+    playMusic(): void {
         // 播放背景音乐
         cc.audioEngine.playMusic(this.bgm, true);
     }
 
-    stopMusic():void{
+    stopMusic(): void {
         // 停止背景音乐
         cc.audioEngine.stopMusic();
     }
 
-    pauseMusic():void{
+    pauseMusic(): void {
         // 暂停背景音乐
         cc.audioEngine.pauseMusic();
     }
 
-    resumeMusic():void{
+    resumeMusic(): void {
         // 恢复背景音乐
         cc.audioEngine.resumeMusic();
     }
 
-    _playEffect(audioClip: cc.AudioClip):void{
+    _playEffect(audioClip: cc.AudioClip): void {
         // 播放音效
         cc.audioEngine.playEffect(audioClip, false);
     }
 
-    playClickAudio():void{
+    playClickAudio(): void {
         // 播放点击音效
         this._playEffect(this.clickAudio);
+    }
+
+    playSwapAudio(): void {
+        this._playEffect(this.swapAudio);
     }
 }

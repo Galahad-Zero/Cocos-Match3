@@ -7,6 +7,7 @@ import {
     EliminateCheckInfo,
     GameCheckInfo,
 } from '../Types';
+import { isLocationEqual } from './GameUtils';
 import { stringifyLocation } from './Grid';
 
 /**
@@ -119,6 +120,8 @@ export function specialBlockGenerator(
     eliminateCheckInfo: EliminateCheckInfo,
     gameCheckInfo: GameCheckInfo
 ): void {
+    // 如果是特殊消除类型,则不生成特殊方块
+    if (eliminateCheckInfo.eliminateBlockType !== BlockSpecialType.NONE) return;
     const eliminateBlockInfos: Array<EliminateBlockInfo> =
         eliminateCheckInfo.contiguousLocations.reduce((acc, location) => {
             const blockConfig =
@@ -156,7 +159,7 @@ export function specialBlockGenerator(
  */
 export function releaseSpecialBlock(
     eliminateCheckInfo: EliminateCheckInfo,
-    alreadyEliminateBlocks: Set<Location>,
+    alreadyEliminateBlocks: Array<Location>,
     gameCheckInfo: GameCheckInfo
 ): void {
     // 获取消除方块信息
@@ -193,7 +196,10 @@ export function releaseSpecialBlock(
                 }));
             // 需要额外消除的方块位置
             extraEliminateLocations = effectedLocations.filter(
-                (location) => !alreadyEliminateBlocks.has(location)
+                (location) =>
+                    !alreadyEliminateBlocks.some((l) =>
+                        isLocationEqual(l, location)
+                    )
             );
         } else if (
             specialBlockInfo.blockConfig.special === BlockSpecialType.COLUMN
@@ -210,7 +216,10 @@ export function releaseSpecialBlock(
                 }));
             // 需要额外消除的方块位置
             extraEliminateLocations = effectedLocations.filter(
-                (location) => !alreadyEliminateBlocks.has(location)
+                (location) =>
+                    !alreadyEliminateBlocks.some((l) =>
+                        isLocationEqual(l, location)
+                    )
             );
         } else if (
             specialBlockInfo.blockConfig.special === BlockSpecialType.BOOM
@@ -218,10 +227,55 @@ export function releaseSpecialBlock(
             // 3 * 3 消除
             const centerLocation = specialBlockInfo.location;
             const effectLocations: Location[] = [];
-            // 需要额外消除的方块位置
-            extraEliminateLocations = effectLocations.filter(
-                (location) => !alreadyEliminateBlocks.has(location)
-            );
+
+            const isInRange = (row: number, column: number) => {
+                return (
+                    row >= 0 &&
+                    row < gameCheckInfo.gameMapInfo.length &&
+                    column >= 0 &&
+                    column < gameCheckInfo.gameMapInfo[0].length
+                );
+            };
+
+            // 3 * 3 消除，遍历3 * 3 范围内的方块
+            const rowOffsetList = [-1, 0, 1];
+            const columnOffsetList = [-1, 0, 1];
+            for (const row of rowOffsetList) {
+                for (const column of columnOffsetList) {
+                    const targetRow = centerLocation.row + row;
+                    const targetColumn = centerLocation.column + column;
+                    if (isInRange(targetRow, targetColumn)) {
+                        effectLocations.push({
+                            row: targetRow,
+                            column: targetColumn,
+                        });
+                    }
+                }
+            }
+            // 四个角落的方块
+            const offsetList = [
+                cc.v2(2, 0),
+                cc.v2(0, 2),
+                cc.v2(-2, 0),
+                cc.v2(0, -2),
+            ];
+            for (const offset of offsetList) {
+                const targetRow = centerLocation.row + offset.x;
+                const targetColumn = centerLocation.column + offset.y;
+                if (isInRange(targetRow, targetColumn)) {
+                    effectLocations.push({
+                        row: targetRow,
+                        column: targetColumn,
+                    });
+                }
+                // 需要额外消除的方块位置
+                extraEliminateLocations = effectLocations.filter(
+                    (location) =>
+                        !alreadyEliminateBlocks.some((l) =>
+                            isLocationEqual(l, location)
+                        )
+                );
+            }
         } else if (
             specialBlockInfo.blockConfig.special ===
             BlockSpecialType.SPECIAL_BOOM
@@ -250,7 +304,10 @@ export function releaseSpecialBlock(
 
             // 需要额外消除的方块位置
             extraEliminateLocations = effectLocations.filter(
-                (location) => !alreadyEliminateBlocks.has(location)
+                (location) =>
+                    !alreadyEliminateBlocks.some((l) =>
+                        isLocationEqual(l, location)
+                    )
             );
         }
 
@@ -279,8 +336,6 @@ export function releaseSpecialBlock(
         });
 
         // 将需要额外消除的方块加入已消除方块集合
-        extraEliminateLocations.forEach((location) => {
-            alreadyEliminateBlocks.add(location);
-        });
+        alreadyEliminateBlocks.push(...extraEliminateLocations);
     }
 }

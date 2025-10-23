@@ -17,6 +17,10 @@ export default class LevelSelect extends cc.Component {
     @property(AudioMgr)
     audioMgr: AudioMgr = null;
 
+    protected start(): void {
+        this.audioMgr.playMusic();
+    }
+
     public onEntryLevel(event: cc.Event.EventTouch): void {
         const target = event.target as cc.Node;
         const levelBtn = target.getComponent(LevelBtn);
@@ -42,5 +46,9 @@ export default class LevelSelect extends cc.Component {
     public backToMenu(): void {
         // 返回主菜单
         cc.director.loadScene('Menu');
+    }
+
+    protected onDestroy(): void {
+        this.audioMgr.stopMusic();
     }
 }
