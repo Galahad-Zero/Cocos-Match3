@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'cea7bT4edhLnIlAunX1zEM2', 'GameFsm');
-// Script/gamePlay/GameFsm.ts
+// Script/gamePlay/common/GameFsm.ts
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });

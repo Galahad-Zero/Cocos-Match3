@@ -10,29 +10,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var SpineProperty = /** @class */ (function () {
-    function SpineProperty() {
+const { ccclass, property } = cc._decorator;
+let SpineProperty = class SpineProperty {
+    constructor() {
         this.skeletonData = null;
         this.animation = '';
         this.isLoop = true;
     }
-    __decorate([
-        property({
-            type: sp.SkeletonData,
-        })
-    ], SpineProperty.prototype, "skeletonData", void 0);
-    __decorate([
-        property()
-    ], SpineProperty.prototype, "animation", void 0);
-    __decorate([
-        property()
-    ], SpineProperty.prototype, "isLoop", void 0);
-    SpineProperty = __decorate([
-        ccclass('SpineProperty')
-    ], SpineProperty);
-    return SpineProperty;
-}());
+};
+__decorate([
+    property({
+        type: sp.SkeletonData,
+    })
+], SpineProperty.prototype, "skeletonData", void 0);
+__decorate([
+    property()
+], SpineProperty.prototype, "animation", void 0);
+__decorate([
+    property()
+], SpineProperty.prototype, "isLoop", void 0);
+SpineProperty = __decorate([
+    ccclass('SpineProperty')
+], SpineProperty);
 exports.default = SpineProperty;
 
 cc._RF.pop();

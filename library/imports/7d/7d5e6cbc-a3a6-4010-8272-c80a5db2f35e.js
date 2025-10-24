@@ -19,8 +19,7 @@ function refreshEditor(enumArray, node) {
     if (!CC_EDITOR) {
         return;
     }
-    for (var _i = 0, enumArray_1 = enumArray; _i < enumArray_1.length; _i++) {
-        var _a = enumArray_1[_i], component = _a.component, propName = _a.propName, enumDef = _a.enumDef;
+    for (const { component, propName, enumDef } of enumArray) {
         setEnumAttr(component, propName, enumDef);
     }
     global.Editor.Utils.refreshSelectedInspector('node', node.uuid);
@@ -29,12 +28,12 @@ function updateAnimationEnum(spineComp, context, propName) {
     if (!CC_EDITOR) {
         return;
     }
-    var animEnum = exports.DefaultAnimationsEnum;
-    var skeletonData = (spineComp || Object.create(null)).skeletonData;
+    let animEnum = exports.DefaultAnimationsEnum;
+    const { skeletonData } = (spineComp || Object.create(null));
     if (skeletonData) {
         animEnum = skeletonData.getAnimsEnum();
     }
-    refreshEditor([{ component: context, propName: propName, enumDef: animEnum }], context.node);
+    refreshEditor([{ component: context, propName, enumDef: animEnum }], context.node);
 }
 exports.updateAnimationEnum = updateAnimationEnum;
 
