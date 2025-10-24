@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets\\Script\\type\\ConfigTypes.ts"],"names":[],"mappings":"","file":"","sourceRoot":"/","sourcesContent":["export interface UserSetting {\r\n    bgmVolume: number;\r\n    effectVolume: number;\r\n}"]}

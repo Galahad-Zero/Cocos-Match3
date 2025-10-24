@@ -1,0 +1,558 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "bird",
+  "_objFlags": 0,
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "lHNOlOPrpMdW6rcpd2me4/nDFTg",
+      "spine": "3.8.75",
+      "x": -56,
+      "y": -56,
+      "width": 112,
+      "height": 113,
+      "images": "../",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "effect",
+        "bone": "root",
+        "attachment": "bird_effect0019"
+      },
+      {
+        "name": "body",
+        "bone": "root",
+        "attachment": "bird_select0029"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "effect": {
+            "bird_effect0000": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0001": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0002": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0003": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0004": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0005": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0006": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0007": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0008": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0009": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0010": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0011": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0012": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0013": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0014": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0015": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0016": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0017": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0018": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            },
+            "bird_effect0019": {
+              "y": 0.5,
+              "width": 112,
+              "height": 113
+            }
+          },
+          "body": {
+            "bird_select0000": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0001": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0002": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0003": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0004": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0005": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0006": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0007": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0008": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0009": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0010": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0011": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0012": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0013": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0014": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0015": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0016": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0017": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0018": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0019": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0020": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0021": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0022": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0023": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0024": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0025": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0026": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0027": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0028": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            },
+            "bird_select0029": {
+              "x": 0.5,
+              "width": 77,
+              "height": 80
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "normal": {
+        "slots": {
+          "body": {
+            "attachment": [
+              {
+                "name": "bird_select0000"
+              },
+              {
+                "time": 0.0333,
+                "name": "bird_select0001"
+              },
+              {
+                "time": 0.0667,
+                "name": "bird_select0002"
+              },
+              {
+                "time": 0.1,
+                "name": "bird_select0003"
+              },
+              {
+                "time": 0.1333,
+                "name": "bird_select0004"
+              },
+              {
+                "time": 0.1667,
+                "name": "bird_select0005"
+              },
+              {
+                "time": 0.2,
+                "name": "bird_select0006"
+              },
+              {
+                "time": 0.2333,
+                "name": "bird_select0007"
+              },
+              {
+                "time": 0.2667,
+                "name": "bird_select0008"
+              },
+              {
+                "time": 0.3,
+                "name": "bird_select0009"
+              },
+              {
+                "time": 0.3333,
+                "name": "bird_select0010"
+              },
+              {
+                "time": 0.3667,
+                "name": "bird_select0011"
+              },
+              {
+                "time": 0.4,
+                "name": "bird_select0012"
+              },
+              {
+                "time": 0.4333,
+                "name": "bird_select0013"
+              },
+              {
+                "time": 0.4667,
+                "name": "bird_select0014"
+              },
+              {
+                "time": 0.5,
+                "name": "bird_select0015"
+              },
+              {
+                "time": 0.5333,
+                "name": "bird_select0016"
+              },
+              {
+                "time": 0.5667,
+                "name": "bird_select0017"
+              },
+              {
+                "time": 0.6,
+                "name": "bird_select0018"
+              },
+              {
+                "time": 0.6333,
+                "name": "bird_select0019"
+              },
+              {
+                "time": 0.6667,
+                "name": "bird_select0020"
+              },
+              {
+                "time": 0.7,
+                "name": "bird_select0021"
+              },
+              {
+                "time": 0.7333,
+                "name": "bird_select0022"
+              },
+              {
+                "time": 0.7667,
+                "name": "bird_select0023"
+              },
+              {
+                "time": 0.8,
+                "name": "bird_select0024"
+              },
+              {
+                "time": 0.8333,
+                "name": "bird_select0025"
+              },
+              {
+                "time": 0.8667,
+                "name": "bird_select0026"
+              },
+              {
+                "time": 0.9,
+                "name": "bird_select0027"
+              },
+              {
+                "time": 0.9333,
+                "name": "bird_select0028"
+              },
+              {
+                "time": 0.9667,
+                "name": "bird_select0029"
+              }
+            ]
+          },
+          "effect": {
+            "attachment": [
+              {
+                "name": "bird_effect0000"
+              },
+              {
+                "time": 0.0333,
+                "name": "bird_effect0001"
+              },
+              {
+                "time": 0.0667,
+                "name": "bird_effect0002"
+              },
+              {
+                "time": 0.1,
+                "name": "bird_effect0003"
+              },
+              {
+                "time": 0.1333,
+                "name": "bird_effect0004"
+              },
+              {
+                "time": 0.1667,
+                "name": "bird_effect0005"
+              },
+              {
+                "time": 0.2,
+                "name": "bird_effect0006"
+              },
+              {
+                "time": 0.2333,
+                "name": "bird_effect0007"
+              },
+              {
+                "time": 0.2667,
+                "name": "bird_effect0008"
+              },
+              {
+                "time": 0.3,
+                "name": "bird_effect0009"
+              },
+              {
+                "time": 0.3333,
+                "name": "bird_effect0010"
+              },
+              {
+                "time": 0.3667,
+                "name": "bird_effect0011"
+              },
+              {
+                "time": 0.4,
+                "name": "bird_effect0012"
+              },
+              {
+                "time": 0.4333,
+                "name": "bird_effect0013"
+              },
+              {
+                "time": 0.4667,
+                "name": "bird_effect0014"
+              },
+              {
+                "time": 0.5,
+                "name": "bird_effect0015"
+              },
+              {
+                "time": 0.5333,
+                "name": "bird_effect0016"
+              },
+              {
+                "time": 0.5667,
+                "name": "bird_effect0017"
+              },
+              {
+                "time": 0.6,
+                "name": "bird_effect0018"
+              },
+              {
+                "time": 0.6333,
+                "name": "bird_effect0019"
+              },
+              {
+                "time": 0.6667,
+                "name": "bird_effect0000"
+              },
+              {
+                "time": 0.7,
+                "name": "bird_effect0001"
+              },
+              {
+                "time": 0.7333,
+                "name": "bird_effect0002"
+              },
+              {
+                "time": 0.7667,
+                "name": "bird_effect0003"
+              },
+              {
+                "time": 0.8,
+                "name": "bird_effect0004"
+              },
+              {
+                "time": 0.8333,
+                "name": "bird_effect0005"
+              },
+              {
+                "time": 0.8667,
+                "name": "bird_effect0006"
+              },
+              {
+                "time": 0.9,
+                "name": "bird_effect0007"
+              },
+              {
+                "time": 0.9333,
+                "name": "bird_effect0008"
+              },
+              {
+                "time": 0.9667,
+                "name": "bird_effect0009"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nbird.png\nsize: 748,748\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nbird_effect0000\n  rotate: true\n  xy: 425, 385\n  size: 104, 105\n  orig: 112, 113\n  offset: 4, 4\n  index: -1\nbird_effect0001\n  rotate: true\n  xy: 532, 384\n  size: 104, 105\n  orig: 112, 113\n  offset: 4, 4\n  index: -1\nbird_effect0002\n  rotate: false\n  xy: 639, 384\n  size: 104, 104\n  orig: 112, 113\n  offset: 4, 5\n  index: -1\nbird_effect0003\n  rotate: true\n  xy: 83, 493\n  size: 102, 104\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0004\n  rotate: true\n  xy: 189, 493\n  size: 102, 103\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0005\n  rotate: true\n  xy: 294, 493\n  size: 102, 104\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0006\n  rotate: true\n  xy: 400, 491\n  size: 102, 103\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0007\n  rotate: true\n  xy: 213, 388\n  size: 103, 104\n  orig: 112, 113\n  offset: 4, 5\n  index: -1\nbird_effect0008\n  rotate: true\n  xy: 2, 283\n  size: 104, 105\n  orig: 112, 113\n  offset: 4, 4\n  index: -1\nbird_effect0009\n  rotate: false\n  xy: 109, 282\n  size: 104, 104\n  orig: 112, 113\n  offset: 4, 5\n  index: -1\nbird_effect0010\n  rotate: true\n  xy: 215, 280\n  size: 104, 105\n  orig: 112, 113\n  offset: 4, 4\n  index: -1\nbird_effect0011\n  rotate: true\n  xy: 322, 279\n  size: 104, 105\n  orig: 112, 113\n  offset: 4, 4\n  index: -1\nbird_effect0012\n  rotate: false\n  xy: 429, 278\n  size: 104, 104\n  orig: 112, 113\n  offset: 4, 5\n  index: -1\nbird_effect0013\n  rotate: true\n  xy: 505, 491\n  size: 102, 104\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0014\n  rotate: true\n  xy: 611, 490\n  size: 102, 103\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0015\n  rotate: true\n  xy: 2, 389\n  size: 102, 104\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0016\n  rotate: true\n  xy: 108, 389\n  size: 102, 103\n  orig: 112, 113\n  offset: 5, 5\n  index: -1\nbird_effect0017\n  rotate: true\n  xy: 319, 386\n  size: 103, 104\n  orig: 112, 113\n  offset: 4, 5\n  index: -1\nbird_effect0018\n  rotate: true\n  xy: 535, 278\n  size: 104, 105\n  orig: 112, 113\n  offset: 4, 4\n  index: -1\nbird_effect0019\n  rotate: false\n  xy: 642, 278\n  size: 104, 104\n  orig: 112, 113\n  offset: 4, 5\n  index: -1\nbird_select0000\n  rotate: false\n  xy: 639, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0001\n  rotate: false\n  xy: 639, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0002\n  rotate: false\n  xy: 639, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0003\n  rotate: false\n  xy: 639, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0005\n  rotate: true\n  xy: 2, 597\n  size: 74, 77\n  orig: 77, 80\n  offset: 1, 0\n  index: -1\nbird_select0006\n  rotate: true\n  xy: 81, 597\n  size: 74, 78\n  orig: 77, 80\n  offset: 1, 0\n  index: -1\nbird_select0007\n  rotate: true\n  xy: 161, 597\n  size: 74, 79\n  orig: 77, 80\n  offset: 1, 0\n  index: -1\nbird_select0008\n  rotate: true\n  xy: 642, 594\n  size: 76, 79\n  orig: 77, 80\n  offset: 0, 0\n  index: -1\nbird_select0009\n  rotate: true\n  xy: 242, 597\n  size: 74, 78\n  orig: 77, 80\n  offset: 1, 0\n  index: -1\nbird_select0010\n  rotate: true\n  xy: 2, 673\n  size: 73, 77\n  orig: 77, 80\n  offset: 2, 0\n  index: -1\nbird_select0011\n  rotate: true\n  xy: 81, 673\n  size: 73, 78\n  orig: 77, 80\n  offset: 2, 0\n  index: -1\nbird_select0012\n  rotate: true\n  xy: 161, 673\n  size: 73, 79\n  orig: 77, 80\n  offset: 2, 0\n  index: -1\nbird_select0013\n  rotate: true\n  xy: 242, 673\n  size: 73, 78\n  orig: 77, 80\n  offset: 2, 0\n  index: -1\nbird_select0014\n  rotate: true\n  xy: 322, 673\n  size: 73, 76\n  orig: 77, 80\n  offset: 2, 0\n  index: -1\nbird_select0015\n  rotate: true\n  xy: 400, 673\n  size: 73, 78\n  orig: 77, 80\n  offset: 2, 0\n  index: -1\nbird_select0016\n  rotate: true\n  xy: 480, 673\n  size: 73, 79\n  orig: 77, 80\n  offset: 2, 0\n  index: -1\nbird_select0017\n  rotate: true\n  xy: 322, 597\n  size: 74, 79\n  orig: 77, 80\n  offset: 1, 0\n  index: -1\nbird_select0018\n  rotate: true\n  xy: 2, 519\n  size: 76, 79\n  orig: 77, 80\n  offset: 0, 0\n  index: -1\nbird_select0019\n  rotate: true\n  xy: 403, 597\n  size: 74, 79\n  orig: 77, 80\n  offset: 1, 0\n  index: -1\nbird_select0020\n  rotate: true\n  xy: 484, 595\n  size: 75, 78\n  orig: 77, 80\n  offset: 1, 0\n  index: -1\nbird_select0021\n  rotate: true\n  xy: 564, 595\n  size: 75, 76\n  orig: 77, 80\n  offset: 1, 1\n  index: -1\nbird_select0029\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0004\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0022\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0023\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0024\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0025\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0026\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0027\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\nbird_select0028\n  rotate: false\n  xy: 561, 672\n  size: 76, 74\n  orig: 77, 80\n  offset: 0, 1\n  index: -1\n",
+  "textures": [
+    {
+      "__uuid__": "701314c7-d61f-452d-8861-5f2612def899"
+    }
+  ],
+  "textureNames": [
+    "bird.png"
+  ],
+  "scale": 1
+}

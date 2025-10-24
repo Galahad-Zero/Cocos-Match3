@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "frog",
+    "texture": "6d939071-70d9-4723-8848-59fd5750d8fd",
+    "atlas": "",
+    "rect": [
+      2,
+      6,
+      659,
+      655
+    ],
+    "offset": [
+      -0.5,
+      -1.5
+    ],
+    "originalSize": [
+      664,
+      664
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

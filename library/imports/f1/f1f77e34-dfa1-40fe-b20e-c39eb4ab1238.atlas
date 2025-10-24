@@ -1,0 +1,965 @@
+
+chicken.png
+size: 784,784
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chicken_click_00
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_01
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_02
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_03
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_04
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_05
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_06
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_22
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_23
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_24
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_25
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_26
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_27
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_28
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_29
+  rotate: false
+  xy: 682, 715
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_07
+  rotate: false
+  xy: 70, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_08
+  rotate: false
+  xy: 2, 718
+  size: 66, 63
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_16
+  rotate: false
+  xy: 2, 718
+  size: 66, 63
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_09
+  rotate: false
+  xy: 138, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_17
+  rotate: false
+  xy: 138, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_10
+  rotate: false
+  xy: 206, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_18
+  rotate: false
+  xy: 206, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_11
+  rotate: false
+  xy: 274, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_19
+  rotate: false
+  xy: 274, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_12
+  rotate: false
+  xy: 342, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_20
+  rotate: false
+  xy: 342, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_13
+  rotate: false
+  xy: 410, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_14
+  rotate: false
+  xy: 478, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_15
+  rotate: false
+  xy: 546, 717
+  size: 66, 64
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_click_21
+  rotate: false
+  xy: 614, 716
+  size: 66, 65
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+chicken_column_00
+  rotate: true
+  xy: 381, 492
+  size: 74, 75
+  orig: 79, 81
+  offset: 3, 3
+  index: -1
+chicken_column_01
+  rotate: false
+  xy: 386, 414
+  size: 75, 75
+  orig: 79, 81
+  offset: 2, 3
+  index: -1
+chicken_column_02
+  rotate: true
+  xy: 463, 413
+  size: 75, 77
+  orig: 79, 81
+  offset: 2, 2
+  index: -1
+chicken_column_03
+  rotate: true
+  xy: 310, 336
+  size: 76, 77
+  orig: 79, 81
+  offset: 2, 2
+  index: -1
+chicken_column_04
+  rotate: true
+  xy: 240, 257
+  size: 77, 79
+  orig: 79, 81
+  offset: 1, 1
+  index: -1
+chicken_column_05
+  rotate: true
+  xy: 240, 257
+  size: 77, 79
+  orig: 79, 81
+  offset: 1, 1
+  index: -1
+chicken_column_06
+  rotate: true
+  xy: 240, 257
+  size: 77, 79
+  orig: 79, 81
+  offset: 1, 1
+  index: -1
+chicken_column_07
+  rotate: true
+  xy: 240, 257
+  size: 77, 79
+  orig: 79, 81
+  offset: 1, 1
+  index: -1
+chicken_column_08
+  rotate: true
+  xy: 240, 257
+  size: 77, 79
+  orig: 79, 81
+  offset: 1, 1
+  index: -1
+chicken_column_09
+  rotate: true
+  xy: 240, 257
+  size: 77, 79
+  orig: 79, 81
+  offset: 1, 1
+  index: -1
+chicken_column_10
+  rotate: true
+  xy: 321, 256
+  size: 77, 78
+  orig: 79, 81
+  offset: 1, 2
+  index: -1
+chicken_column_11
+  rotate: true
+  xy: 542, 413
+  size: 75, 77
+  orig: 79, 81
+  offset: 2, 2
+  index: -1
+chicken_column_12
+  rotate: true
+  xy: 621, 413
+  size: 75, 76
+  orig: 79, 81
+  offset: 2, 2
+  index: -1
+chicken_column_13
+  rotate: false
+  xy: 699, 413
+  size: 75, 75
+  orig: 79, 81
+  offset: 2, 3
+  index: -1
+chicken_column_14
+  rotate: true
+  xy: 77, 569
+  size: 73, 74
+  orig: 79, 81
+  offset: 3, 3
+  index: -1
+chicken_column_28
+  rotate: true
+  xy: 77, 569
+  size: 73, 74
+  orig: 79, 81
+  offset: 3, 3
+  index: -1
+chicken_column_15
+  rotate: true
+  xy: 153, 569
+  size: 73, 74
+  orig: 79, 81
+  offset: 3, 3
+  index: -1
+chicken_column_16
+  rotate: false
+  xy: 229, 568
+  size: 73, 73
+  orig: 79, 81
+  offset: 3, 4
+  index: -1
+chicken_column_17
+  rotate: false
+  xy: 298, 643
+  size: 73, 72
+  orig: 79, 81
+  offset: 3, 4
+  index: -1
+chicken_column_18
+  rotate: false
+  xy: 373, 643
+  size: 73, 72
+  orig: 79, 81
+  offset: 3, 4
+  index: -1
+chicken_column_19
+  rotate: false
+  xy: 76, 644
+  size: 72, 71
+  orig: 79, 81
+  offset: 4, 4
+  index: -1
+chicken_column_20
+  rotate: false
+  xy: 76, 644
+  size: 72, 71
+  orig: 79, 81
+  offset: 4, 4
+  index: -1
+chicken_column_21
+  rotate: false
+  xy: 76, 644
+  size: 72, 71
+  orig: 79, 81
+  offset: 4, 4
+  index: -1
+chicken_column_22
+  rotate: false
+  xy: 76, 644
+  size: 72, 71
+  orig: 79, 81
+  offset: 4, 4
+  index: -1
+chicken_column_23
+  rotate: false
+  xy: 76, 644
+  size: 72, 71
+  orig: 79, 81
+  offset: 4, 4
+  index: -1
+chicken_column_24
+  rotate: false
+  xy: 76, 644
+  size: 72, 71
+  orig: 79, 81
+  offset: 4, 4
+  index: -1
+chicken_column_25
+  rotate: false
+  xy: 448, 643
+  size: 73, 72
+  orig: 79, 81
+  offset: 3, 4
+  index: -1
+chicken_column_26
+  rotate: false
+  xy: 523, 643
+  size: 73, 72
+  orig: 79, 81
+  offset: 3, 4
+  index: -1
+chicken_column_27
+  rotate: true
+  xy: 304, 568
+  size: 73, 74
+  orig: 79, 81
+  offset: 3, 3
+  index: -1
+chicken_line_00
+  rotate: true
+  xy: 458, 491
+  size: 74, 75
+  orig: 78, 79
+  offset: 2, 2
+  index: -1
+chicken_line_14
+  rotate: true
+  xy: 458, 491
+  size: 74, 75
+  orig: 78, 79
+  offset: 2, 2
+  index: -1
+chicken_line_28
+  rotate: true
+  xy: 458, 491
+  size: 74, 75
+  orig: 78, 79
+  offset: 2, 2
+  index: -1
+chicken_line_01
+  rotate: true
+  xy: 535, 490
+  size: 74, 75
+  orig: 78, 79
+  offset: 2, 2
+  index: -1
+chicken_line_02
+  rotate: false
+  xy: 2, 341
+  size: 75, 75
+  orig: 78, 79
+  offset: 2, 2
+  index: -1
+chicken_line_03
+  rotate: true
+  xy: 389, 335
+  size: 76, 77
+  orig: 78, 79
+  offset: 1, 1
+  index: -1
+chicken_line_04
+  rotate: false
+  xy: 482, 255
+  size: 78, 78
+  orig: 78, 79
+  offset: 0, 1
+  index: -1
+chicken_line_05
+  rotate: false
+  xy: 482, 255
+  size: 78, 78
+  orig: 78, 79
+  offset: 0, 1
+  index: -1
+chicken_line_06
+  rotate: false
+  xy: 482, 255
+  size: 78, 78
+  orig: 78, 79
+  offset: 0, 1
+  index: -1
+chicken_line_07
+  rotate: false
+  xy: 482, 255
+  size: 78, 78
+  orig: 78, 79
+  offset: 0, 1
+  index: -1
+chicken_line_08
+  rotate: false
+  xy: 482, 255
+  size: 78, 78
+  orig: 78, 79
+  offset: 0, 1
+  index: -1
+chicken_line_09
+  rotate: false
+  xy: 482, 255
+  size: 78, 78
+  orig: 78, 79
+  offset: 0, 1
+  index: -1
+chicken_line_10
+  rotate: true
+  xy: 468, 335
+  size: 76, 77
+  orig: 78, 79
+  offset: 1, 1
+  index: -1
+chicken_line_11
+  rotate: false
+  xy: 547, 335
+  size: 76, 76
+  orig: 78, 79
+  offset: 1, 2
+  index: -1
+chicken_line_12
+  rotate: false
+  xy: 79, 341
+  size: 75, 75
+  orig: 78, 79
+  offset: 1, 2
+  index: -1
+chicken_line_13
+  rotate: true
+  xy: 612, 490
+  size: 74, 75
+  orig: 78, 79
+  offset: 2, 2
+  index: -1
+chicken_line_15
+  rotate: true
+  xy: 380, 568
+  size: 73, 74
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_16
+  rotate: false
+  xy: 456, 568
+  size: 73, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_17
+  rotate: false
+  xy: 531, 567
+  size: 73, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_18
+  rotate: false
+  xy: 606, 566
+  size: 73, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_19
+  rotate: true
+  xy: 598, 642
+  size: 72, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_20
+  rotate: true
+  xy: 598, 642
+  size: 72, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_21
+  rotate: true
+  xy: 598, 642
+  size: 72, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_22
+  rotate: true
+  xy: 598, 642
+  size: 72, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_23
+  rotate: true
+  xy: 598, 642
+  size: 72, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_24
+  rotate: true
+  xy: 598, 642
+  size: 72, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_25
+  rotate: false
+  xy: 681, 566
+  size: 73, 73
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_26
+  rotate: true
+  xy: 77, 494
+  size: 73, 74
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_line_27
+  rotate: true
+  xy: 153, 494
+  size: 73, 74
+  orig: 78, 79
+  offset: 2, 3
+  index: -1
+chicken_wrap_01
+  rotate: false
+  xy: 150, 644
+  size: 72, 71
+  orig: 78, 81
+  offset: 3, 5
+  index: -1
+chicken_wrap_02
+  rotate: true
+  xy: 673, 641
+  size: 72, 73
+  orig: 78, 81
+  offset: 3, 4
+  index: -1
+chicken_wrap_03
+  rotate: false
+  xy: 2, 495
+  size: 73, 73
+  orig: 78, 81
+  offset: 2, 4
+  index: -1
+chicken_wrap_45
+  rotate: false
+  xy: 2, 495
+  size: 73, 73
+  orig: 78, 81
+  offset: 2, 4
+  index: -1
+chicken_wrap_04
+  rotate: false
+  xy: 229, 493
+  size: 74, 73
+  orig: 78, 81
+  offset: 2, 4
+  index: -1
+chicken_wrap_05
+  rotate: false
+  xy: 689, 490
+  size: 74, 74
+  orig: 78, 81
+  offset: 2, 4
+  index: -1
+chicken_wrap_43
+  rotate: false
+  xy: 689, 490
+  size: 74, 74
+  orig: 78, 81
+  offset: 2, 4
+  index: -1
+chicken_wrap_06
+  rotate: true
+  xy: 2, 418
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_07
+  rotate: true
+  xy: 79, 418
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_41
+  rotate: true
+  xy: 79, 418
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_08
+  rotate: true
+  xy: 156, 417
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_40
+  rotate: true
+  xy: 156, 417
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_09
+  rotate: true
+  xy: 233, 417
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_21
+  rotate: true
+  xy: 233, 417
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_33
+  rotate: true
+  xy: 233, 417
+  size: 74, 75
+  orig: 78, 81
+  offset: 2, 3
+  index: -1
+chicken_wrap_10
+  rotate: false
+  xy: 156, 340
+  size: 75, 75
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_20
+  rotate: false
+  xy: 156, 340
+  size: 75, 75
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_22
+  rotate: false
+  xy: 156, 340
+  size: 75, 75
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_32
+  rotate: false
+  xy: 156, 340
+  size: 75, 75
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_34
+  rotate: false
+  xy: 156, 340
+  size: 75, 75
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_11
+  rotate: false
+  xy: 233, 339
+  size: 75, 76
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_19
+  rotate: false
+  xy: 233, 339
+  size: 75, 76
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_23
+  rotate: false
+  xy: 233, 339
+  size: 75, 76
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_31
+  rotate: false
+  xy: 233, 339
+  size: 75, 76
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_35
+  rotate: false
+  xy: 233, 339
+  size: 75, 76
+  orig: 78, 81
+  offset: 1, 3
+  index: -1
+chicken_wrap_12
+  rotate: true
+  xy: 625, 335
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_24
+  rotate: true
+  xy: 625, 335
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_36
+  rotate: true
+  xy: 625, 335
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_13
+  rotate: true
+  xy: 704, 335
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_25
+  rotate: true
+  xy: 704, 335
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_37
+  rotate: true
+  xy: 704, 335
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_14
+  rotate: true
+  xy: 2, 263
+  size: 76, 78
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_16
+  rotate: true
+  xy: 2, 263
+  size: 76, 78
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_26
+  rotate: true
+  xy: 2, 263
+  size: 76, 78
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_28
+  rotate: true
+  xy: 2, 263
+  size: 76, 78
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_38
+  rotate: true
+  xy: 2, 263
+  size: 76, 78
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_15
+  rotate: true
+  xy: 401, 256
+  size: 77, 79
+  orig: 78, 81
+  offset: 0, 1
+  index: -1
+chicken_wrap_27
+  rotate: true
+  xy: 401, 256
+  size: 77, 79
+  orig: 78, 81
+  offset: 0, 1
+  index: -1
+chicken_wrap_39
+  rotate: true
+  xy: 401, 256
+  size: 77, 79
+  orig: 78, 81
+  offset: 0, 1
+  index: -1
+chicken_wrap_17
+  rotate: true
+  xy: 82, 262
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_29
+  rotate: true
+  xy: 82, 262
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_18
+  rotate: true
+  xy: 161, 261
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_30
+  rotate: true
+  xy: 161, 261
+  size: 76, 77
+  orig: 78, 81
+  offset: 1, 2
+  index: -1
+chicken_wrap_42
+  rotate: false
+  xy: 310, 416
+  size: 74, 74
+  orig: 78, 81
+  offset: 2, 4
+  index: -1
+chicken_wrap_44
+  rotate: false
+  xy: 305, 493
+  size: 74, 73
+  orig: 78, 81
+  offset: 2, 4
+  index: -1
+chicken_wrap_46
+  rotate: true
+  xy: 2, 570
+  size: 72, 73
+  orig: 78, 81
+  offset: 3, 4
+  index: -1
+chicken_wrap_47
+  rotate: false
+  xy: 224, 644
+  size: 72, 71
+  orig: 78, 81
+  offset: 3, 5
+  index: -1
+chicken_wrap_48
+  rotate: false
+  xy: 2, 644
+  size: 72, 71
+  orig: 78, 81
+  offset: 3, 5
+  index: -1
+chicken_wrap_00
+  rotate: false
+  xy: 2, 644
+  size: 72, 71
+  orig: 78, 81
+  offset: 3, 5
+  index: -1

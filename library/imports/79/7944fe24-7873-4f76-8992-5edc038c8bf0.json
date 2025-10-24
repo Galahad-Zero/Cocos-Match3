@@ -1,0 +1,1277 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "frog",
+  "_objFlags": 0,
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "xbeBI0ar1snYvuuuo2FdHWiaUsw",
+      "spine": "3.8.75",
+      "images": "../../Output_frog/",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "cell",
+        "bone": "root"
+      },
+      {
+        "name": "cell_row",
+        "bone": "root"
+      },
+      {
+        "name": "cell_col",
+        "bone": "root"
+      },
+      {
+        "name": "cell_bomb",
+        "bone": "root"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "cell_bomb": {
+            "frog_wrap_00": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_01": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_02": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_03": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_04": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_05": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_06": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_07": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_08": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_09": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_10": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_11": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_12": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_13": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_14": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_15": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_16": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_17": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_18": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_19": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_20": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_21": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_22": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_23": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_24": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_25": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_26": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_27": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_28": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_29": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_30": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_31": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_32": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_33": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_34": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_35": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_36": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_37": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_38": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_39": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_40": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_41": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_42": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_43": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_44": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_45": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_46": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_47": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            },
+            "frog_wrap_48": {
+              "x": 0.5,
+              "width": 83,
+              "height": 72
+            }
+          },
+          "cell": {
+            "frog_click_00": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_01": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_02": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_03": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_04": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_05": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_06": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_07": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_08": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_09": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_10": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_11": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_12": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_13": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_14": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_15": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_16": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_17": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_18": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_19": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_20": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_21": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_22": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_23": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_24": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_25": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_26": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_27": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_28": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            },
+            "frog_click_29": {
+              "y": 0.5,
+              "width": 70,
+              "height": 69
+            }
+          },
+          "cell_col": {
+            "frog_column_00": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_01": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_02": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_03": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_04": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_05": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_06": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_07": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_08": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_09": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_10": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_11": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_12": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_13": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_14": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_15": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_16": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_17": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_18": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_19": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_20": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_21": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_22": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_23": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_24": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_25": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_26": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_27": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_28": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_column_29": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 83,
+              "height": 71
+            }
+          },
+          "cell_row": {
+            "frog_line_00": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_01": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_02": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_03": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_04": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_05": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_06": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_07": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_08": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_09": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_10": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_11": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_12": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_13": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_14": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_15": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_16": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_17": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_18": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_19": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_20": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_21": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_22": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_23": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_24": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_25": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_26": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_27": {
+              "width": 82,
+              "height": 72
+            },
+            "frog_line_28": {
+              "width": 82,
+              "height": 72
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "bomb": {
+        "slots": {
+          "cell_bomb": {
+            "attachment": [
+              {
+                "name": "frog_wrap_00"
+              },
+              {
+                "time": 0.0333,
+                "name": "frog_wrap_01"
+              },
+              {
+                "time": 0.0667,
+                "name": "frog_wrap_02"
+              },
+              {
+                "time": 0.1,
+                "name": "frog_wrap_03"
+              },
+              {
+                "time": 0.1333,
+                "name": "frog_wrap_04"
+              },
+              {
+                "time": 0.1667,
+                "name": "frog_wrap_05"
+              },
+              {
+                "time": 0.2,
+                "name": "frog_wrap_06"
+              },
+              {
+                "time": 0.2333,
+                "name": "frog_wrap_07"
+              },
+              {
+                "time": 0.2667,
+                "name": "frog_wrap_08"
+              },
+              {
+                "time": 0.3,
+                "name": "frog_wrap_09"
+              },
+              {
+                "time": 0.3333,
+                "name": "frog_wrap_10"
+              },
+              {
+                "time": 0.3667,
+                "name": "frog_wrap_11"
+              },
+              {
+                "time": 0.4,
+                "name": "frog_wrap_12"
+              },
+              {
+                "time": 0.4333,
+                "name": "frog_wrap_13"
+              },
+              {
+                "time": 0.4667,
+                "name": "frog_wrap_14"
+              },
+              {
+                "time": 0.5,
+                "name": "frog_wrap_15"
+              },
+              {
+                "time": 0.5333,
+                "name": "frog_wrap_16"
+              },
+              {
+                "time": 0.5667,
+                "name": "frog_wrap_17"
+              },
+              {
+                "time": 0.6,
+                "name": "frog_wrap_18"
+              },
+              {
+                "time": 0.6333,
+                "name": "frog_wrap_19"
+              },
+              {
+                "time": 0.6667,
+                "name": "frog_wrap_20"
+              },
+              {
+                "time": 0.7,
+                "name": "frog_wrap_21"
+              },
+              {
+                "time": 0.7333,
+                "name": "frog_wrap_22"
+              },
+              {
+                "time": 0.7667,
+                "name": "frog_wrap_23"
+              },
+              {
+                "time": 0.8,
+                "name": "frog_wrap_24"
+              },
+              {
+                "time": 0.8333,
+                "name": "frog_wrap_25"
+              },
+              {
+                "time": 0.8667,
+                "name": "frog_wrap_27"
+              },
+              {
+                "time": 0.9,
+                "name": "frog_wrap_29"
+              },
+              {
+                "time": 0.9333,
+                "name": "frog_wrap_28"
+              },
+              {
+                "time": 0.9667,
+                "name": "frog_wrap_29"
+              },
+              {
+                "time": 1,
+                "name": "frog_wrap_30"
+              },
+              {
+                "time": 1.0333,
+                "name": "frog_wrap_31"
+              },
+              {
+                "time": 1.0667,
+                "name": "frog_wrap_32"
+              },
+              {
+                "time": 1.1,
+                "name": "frog_wrap_33"
+              },
+              {
+                "time": 1.1333,
+                "name": "frog_wrap_34"
+              },
+              {
+                "time": 1.1667,
+                "name": "frog_wrap_35"
+              },
+              {
+                "time": 1.2,
+                "name": "frog_wrap_36"
+              },
+              {
+                "time": 1.2333,
+                "name": "frog_wrap_37"
+              },
+              {
+                "time": 1.2667,
+                "name": "frog_wrap_38"
+              },
+              {
+                "time": 1.3,
+                "name": "frog_wrap_39"
+              },
+              {
+                "time": 1.3333,
+                "name": "frog_wrap_40"
+              },
+              {
+                "time": 1.3667,
+                "name": "frog_wrap_41"
+              },
+              {
+                "time": 1.4,
+                "name": "frog_wrap_42"
+              },
+              {
+                "time": 1.4333,
+                "name": "frog_wrap_43"
+              },
+              {
+                "time": 1.4667,
+                "name": "frog_wrap_44"
+              },
+              {
+                "time": 1.5,
+                "name": "frog_wrap_45"
+              },
+              {
+                "time": 1.5333,
+                "name": "frog_wrap_46"
+              },
+              {
+                "time": 1.5667,
+                "name": "frog_wrap_47"
+              },
+              {
+                "time": 1.6,
+                "name": "frog_wrap_48"
+              }
+            ]
+          }
+        }
+      },
+      "column": {
+        "slots": {
+          "cell_col": {
+            "attachment": [
+              {
+                "name": "frog_column_00"
+              },
+              {
+                "time": 0.0333,
+                "name": "frog_column_01"
+              },
+              {
+                "time": 0.0667,
+                "name": "frog_column_02"
+              },
+              {
+                "time": 0.1,
+                "name": "frog_column_03"
+              },
+              {
+                "time": 0.1333,
+                "name": "frog_column_04"
+              },
+              {
+                "time": 0.1667,
+                "name": "frog_column_05"
+              },
+              {
+                "time": 0.2,
+                "name": "frog_column_06"
+              },
+              {
+                "time": 0.2333,
+                "name": "frog_column_07"
+              },
+              {
+                "time": 0.2667,
+                "name": "frog_column_08"
+              },
+              {
+                "time": 0.3,
+                "name": "frog_column_09"
+              },
+              {
+                "time": 0.3333,
+                "name": "frog_column_10"
+              },
+              {
+                "time": 0.3667,
+                "name": "frog_column_11"
+              },
+              {
+                "time": 0.4,
+                "name": "frog_column_12"
+              },
+              {
+                "time": 0.4333,
+                "name": "frog_column_13"
+              },
+              {
+                "time": 0.4667,
+                "name": "frog_column_14"
+              },
+              {
+                "time": 0.5,
+                "name": "frog_column_15"
+              },
+              {
+                "time": 0.5333,
+                "name": "frog_column_16"
+              },
+              {
+                "time": 0.5667,
+                "name": "frog_column_17"
+              },
+              {
+                "time": 0.6,
+                "name": "frog_column_18"
+              },
+              {
+                "time": 0.6333,
+                "name": "frog_column_19"
+              },
+              {
+                "time": 0.6667,
+                "name": "frog_column_20"
+              },
+              {
+                "time": 0.7,
+                "name": "frog_column_21"
+              },
+              {
+                "time": 0.7333,
+                "name": "frog_column_22"
+              },
+              {
+                "time": 0.7667,
+                "name": "frog_column_23"
+              },
+              {
+                "time": 0.8,
+                "name": "frog_column_24"
+              },
+              {
+                "time": 0.8333,
+                "name": "frog_column_25"
+              },
+              {
+                "time": 0.8667,
+                "name": "frog_column_26"
+              },
+              {
+                "time": 0.9,
+                "name": "frog_column_27"
+              },
+              {
+                "time": 0.9333,
+                "name": "frog_column_28"
+              },
+              {
+                "time": 0.9667,
+                "name": "frog_column_29"
+              }
+            ]
+          }
+        }
+      },
+      "normal": {
+        "slots": {
+          "cell": {
+            "attachment": [
+              {
+                "name": "frog_click_00"
+              },
+              {
+                "time": 0.0333,
+                "name": "frog_click_01"
+              },
+              {
+                "time": 0.0667,
+                "name": "frog_click_02"
+              },
+              {
+                "time": 0.1,
+                "name": "frog_click_03"
+              },
+              {
+                "time": 0.1333,
+                "name": "frog_click_04"
+              },
+              {
+                "time": 0.1667,
+                "name": "frog_click_05"
+              },
+              {
+                "time": 0.2,
+                "name": "frog_click_06"
+              },
+              {
+                "time": 0.2333,
+                "name": "frog_click_07"
+              },
+              {
+                "time": 0.2667,
+                "name": "frog_click_08"
+              },
+              {
+                "time": 0.3,
+                "name": "frog_click_09"
+              },
+              {
+                "time": 0.3333,
+                "name": "frog_click_10"
+              },
+              {
+                "time": 0.3667,
+                "name": "frog_click_11"
+              },
+              {
+                "time": 0.4,
+                "name": "frog_click_12"
+              },
+              {
+                "time": 0.4333,
+                "name": "frog_click_13"
+              },
+              {
+                "time": 0.4667,
+                "name": "frog_click_14"
+              },
+              {
+                "time": 0.5,
+                "name": "frog_click_15"
+              },
+              {
+                "time": 0.5333,
+                "name": "frog_click_16"
+              },
+              {
+                "time": 0.5667,
+                "name": "frog_click_17"
+              },
+              {
+                "time": 0.6,
+                "name": "frog_click_18"
+              },
+              {
+                "time": 0.6333,
+                "name": "frog_click_19"
+              },
+              {
+                "time": 0.6667,
+                "name": "frog_click_20"
+              },
+              {
+                "time": 0.7,
+                "name": "frog_click_21"
+              },
+              {
+                "time": 0.7333,
+                "name": "frog_click_22"
+              },
+              {
+                "time": 0.7667,
+                "name": "frog_click_23"
+              },
+              {
+                "time": 0.8,
+                "name": "frog_click_24"
+              },
+              {
+                "time": 0.8333,
+                "name": "frog_click_25"
+              },
+              {
+                "time": 0.8667,
+                "name": "frog_click_26"
+              },
+              {
+                "time": 0.9,
+                "name": "frog_click_27"
+              },
+              {
+                "time": 0.9333,
+                "name": "frog_click_28"
+              },
+              {
+                "time": 0.9667,
+                "name": "frog_click_29"
+              }
+            ]
+          }
+        }
+      },
+      "row": {
+        "slots": {
+          "cell_row": {
+            "attachment": [
+              {
+                "name": "frog_line_00"
+              },
+              {
+                "time": 0.0333,
+                "name": "frog_line_01"
+              },
+              {
+                "time": 0.0667,
+                "name": "frog_line_02"
+              },
+              {
+                "time": 0.1,
+                "name": "frog_line_03"
+              },
+              {
+                "time": 0.1333,
+                "name": "frog_line_04"
+              },
+              {
+                "time": 0.1667,
+                "name": "frog_line_05"
+              },
+              {
+                "time": 0.2,
+                "name": "frog_line_06"
+              },
+              {
+                "time": 0.2333,
+                "name": "frog_line_07"
+              },
+              {
+                "time": 0.2667,
+                "name": "frog_line_08"
+              },
+              {
+                "time": 0.3,
+                "name": "frog_line_09"
+              },
+              {
+                "time": 0.3333,
+                "name": "frog_line_10"
+              },
+              {
+                "time": 0.3667,
+                "name": "frog_line_11"
+              },
+              {
+                "time": 0.4,
+                "name": "frog_line_12"
+              },
+              {
+                "time": 0.4333,
+                "name": "frog_line_13"
+              },
+              {
+                "time": 0.4667,
+                "name": "frog_line_14"
+              },
+              {
+                "time": 0.5,
+                "name": "frog_line_15"
+              },
+              {
+                "time": 0.5333,
+                "name": "frog_line_16"
+              },
+              {
+                "time": 0.5667,
+                "name": "frog_line_17"
+              },
+              {
+                "time": 0.6,
+                "name": "frog_line_18"
+              },
+              {
+                "time": 0.6333,
+                "name": "frog_line_19"
+              },
+              {
+                "time": 0.6667,
+                "name": "frog_line_20"
+              },
+              {
+                "time": 0.7,
+                "name": "frog_line_21"
+              },
+              {
+                "time": 0.7333,
+                "name": "frog_line_22"
+              },
+              {
+                "time": 0.7667,
+                "name": "frog_line_23"
+              },
+              {
+                "time": 0.8,
+                "name": "frog_line_24"
+              },
+              {
+                "time": 0.8333,
+                "name": "frog_line_25"
+              },
+              {
+                "time": 0.8667,
+                "name": "frog_line_26"
+              },
+              {
+                "time": 0.9,
+                "name": "frog_line_27"
+              },
+              {
+                "time": 0.9333,
+                "name": "frog_line_28"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nfrog.png\nsize: 664,664\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nfrog_click_00\n  rotate: false\n  xy: 460, 112\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_01\n  rotate: false\n  xy: 531, 111\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_24\n  rotate: false\n  xy: 531, 111\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_02\n  rotate: false\n  xy: 460, 53\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_03\n  rotate: true\n  xy: 401, 22\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_04\n  rotate: true\n  xy: 401, 22\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_05\n  rotate: true\n  xy: 401, 22\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_06\n  rotate: true\n  xy: 399, 93\n  size: 69, 59\n  orig: 70, 69\n  offset: 1, 2\n  index: -1\nfrog_click_07\n  rotate: true\n  xy: 442, 171\n  size: 69, 59\n  orig: 70, 69\n  offset: 1, 2\n  index: -1\nfrog_click_08\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_09\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_10\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_11\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_12\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_13\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_14\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_15\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_16\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_17\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_18\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_19\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_20\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_21\n  rotate: true\n  xy: 336, 93\n  size: 69, 61\n  orig: 70, 69\n  offset: 1, 1\n  index: -1\nfrog_click_22\n  rotate: true\n  xy: 503, 171\n  size: 69, 59\n  orig: 70, 69\n  offset: 1, 2\n  index: -1\nfrog_click_23\n  rotate: false\n  xy: 564, 170\n  size: 69, 59\n  orig: 70, 69\n  offset: 1, 2\n  index: -1\nfrog_click_25\n  rotate: true\n  xy: 602, 99\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_26\n  rotate: true\n  xy: 602, 99\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_27\n  rotate: true\n  xy: 602, 99\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_28\n  rotate: true\n  xy: 602, 99\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_click_29\n  rotate: true\n  xy: 602, 99\n  size: 69, 57\n  orig: 70, 69\n  offset: 1, 3\n  index: -1\nfrog_column_00\n  rotate: false\n  xy: 2, 309\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_14\n  rotate: false\n  xy: 2, 309\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_28\n  rotate: false\n  xy: 2, 309\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_01\n  rotate: false\n  xy: 580, 439\n  size: 79, 68\n  orig: 82, 72\n  offset: 2, 1\n  index: -1\nfrog_column_02\n  rotate: false\n  xy: 335, 520\n  size: 80, 69\n  orig: 82, 72\n  offset: 1, 1\n  index: -1\nfrog_column_03\n  rotate: false\n  xy: 417, 520\n  size: 80, 69\n  orig: 82, 72\n  offset: 1, 1\n  index: -1\nfrog_column_04\n  rotate: false\n  xy: 170, 591\n  size: 82, 70\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_column_05\n  rotate: false\n  xy: 170, 591\n  size: 82, 70\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_column_06\n  rotate: false\n  xy: 170, 591\n  size: 82, 70\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_column_07\n  rotate: false\n  xy: 170, 591\n  size: 82, 70\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_column_08\n  rotate: false\n  xy: 170, 591\n  size: 82, 70\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_column_09\n  rotate: false\n  xy: 170, 591\n  size: 82, 70\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_column_10\n  rotate: false\n  xy: 170, 519\n  size: 80, 70\n  orig: 82, 72\n  offset: 1, 1\n  index: -1\nfrog_column_11\n  rotate: false\n  xy: 2, 448\n  size: 80, 68\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_column_12\n  rotate: false\n  xy: 167, 449\n  size: 80, 68\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_column_13\n  rotate: false\n  xy: 326, 311\n  size: 79, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_15\n  rotate: false\n  xy: 164, 310\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_16\n  rotate: false\n  xy: 244, 310\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_17\n  rotate: true\n  xy: 2, 92\n  size: 78, 65\n  orig: 82, 72\n  offset: 2, 3\n  index: -1\nfrog_column_18\n  rotate: true\n  xy: 136, 27\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 3\n  index: -1\nfrog_column_19\n  rotate: true\n  xy: 335, 7\n  size: 76, 64\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_column_20\n  rotate: true\n  xy: 335, 7\n  size: 76, 64\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_column_21\n  rotate: true\n  xy: 335, 7\n  size: 76, 64\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_column_22\n  rotate: true\n  xy: 335, 7\n  size: 76, 64\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_column_23\n  rotate: true\n  xy: 335, 7\n  size: 76, 64\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_column_24\n  rotate: true\n  xy: 335, 7\n  size: 76, 64\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_column_25\n  rotate: true\n  xy: 203, 85\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 3\n  index: -1\nfrog_column_26\n  rotate: false\n  xy: 324, 242\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_27\n  rotate: false\n  xy: 404, 242\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_column_29\n  rotate: true\n  xy: 376, 164\n  size: 76, 64\n  orig: 83, 71\n  offset: 3, 4\n  index: -1\nfrog_line_00\n  rotate: false\n  xy: 246, 379\n  size: 78, 68\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_line_14\n  rotate: false\n  xy: 246, 379\n  size: 78, 68\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_line_28\n  rotate: false\n  xy: 246, 379\n  size: 78, 68\n  orig: 82, 72\n  offset: 2, 2\n  index: -1\nfrog_line_01\n  rotate: false\n  xy: 334, 450\n  size: 80, 68\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_line_02\n  rotate: false\n  xy: 499, 520\n  size: 80, 69\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_line_03\n  rotate: false\n  xy: 581, 509\n  size: 80, 69\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_line_04\n  rotate: false\n  xy: 2, 590\n  size: 82, 71\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_line_05\n  rotate: false\n  xy: 2, 590\n  size: 82, 71\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_line_06\n  rotate: false\n  xy: 2, 590\n  size: 82, 71\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_line_07\n  rotate: false\n  xy: 2, 590\n  size: 82, 71\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_line_08\n  rotate: false\n  xy: 2, 590\n  size: 82, 71\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_line_09\n  rotate: false\n  xy: 86, 590\n  size: 82, 71\n  orig: 82, 72\n  offset: 0, 1\n  index: -1\nfrog_line_10\n  rotate: false\n  xy: 2, 518\n  size: 80, 70\n  orig: 82, 72\n  offset: 1, 1\n  index: -1\nfrog_line_11\n  rotate: false\n  xy: 252, 449\n  size: 80, 69\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_line_12\n  rotate: false\n  xy: 416, 450\n  size: 80, 68\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_line_13\n  rotate: false\n  xy: 498, 450\n  size: 80, 68\n  orig: 82, 72\n  offset: 1, 2\n  index: -1\nfrog_line_15\n  rotate: false\n  xy: 484, 242\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 3\n  index: -1\nfrog_line_16\n  rotate: false\n  xy: 564, 231\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 3\n  index: -1\nfrog_line_17\n  rotate: true\n  xy: 162, 163\n  size: 77, 66\n  orig: 82, 72\n  offset: 2, 3\n  index: -1\nfrog_line_18\n  rotate: true\n  xy: 2, 13\n  size: 77, 65\n  orig: 82, 72\n  offset: 2, 4\n  index: -1\nfrog_line_19\n  rotate: true\n  xy: 230, 164\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_line_20\n  rotate: true\n  xy: 230, 164\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_line_21\n  rotate: true\n  xy: 230, 164\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_line_22\n  rotate: true\n  xy: 230, 164\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_line_23\n  rotate: true\n  xy: 230, 164\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_line_24\n  rotate: true\n  xy: 230, 164\n  size: 76, 65\n  orig: 82, 72\n  offset: 3, 4\n  index: -1\nfrog_line_25\n  rotate: true\n  xy: 69, 26\n  size: 77, 65\n  orig: 82, 72\n  offset: 2, 4\n  index: -1\nfrog_line_26\n  rotate: false\n  xy: 82, 241\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 3\n  index: -1\nfrog_line_27\n  rotate: false\n  xy: 2, 240\n  size: 78, 67\n  orig: 82, 72\n  offset: 2, 3\n  index: -1\nfrog_wrap_01\n  rotate: true\n  xy: 269, 6\n  size: 77, 64\n  orig: 83, 72\n  offset: 3, 4\n  index: -1\nfrog_wrap_02\n  rotate: true\n  xy: 270, 85\n  size: 77, 64\n  orig: 83, 72\n  offset: 3, 4\n  index: -1\nfrog_wrap_03\n  rotate: false\n  xy: 82, 173\n  size: 77, 66\n  orig: 83, 72\n  offset: 3, 3\n  index: -1\nfrog_wrap_04\n  rotate: false\n  xy: 2, 172\n  size: 77, 66\n  orig: 83, 72\n  offset: 3, 3\n  index: -1\nfrog_wrap_05\n  rotate: false\n  xy: 162, 242\n  size: 79, 66\n  orig: 83, 72\n  offset: 2, 3\n  index: -1\nfrog_wrap_06\n  rotate: false\n  xy: 407, 311\n  size: 79, 67\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_07\n  rotate: false\n  xy: 488, 311\n  size: 79, 67\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_08\n  rotate: false\n  xy: 334, 380\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_09\n  rotate: false\n  xy: 415, 380\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_12\n  rotate: false\n  xy: 415, 380\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_10\n  rotate: false\n  xy: 496, 380\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_11\n  rotate: false\n  xy: 496, 380\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_13\n  rotate: false\n  xy: 577, 369\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_21\n  rotate: false\n  xy: 577, 369\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_29\n  rotate: false\n  xy: 577, 369\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_37\n  rotate: false\n  xy: 577, 369\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_14\n  rotate: false\n  xy: 84, 379\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_22\n  rotate: false\n  xy: 84, 379\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_30\n  rotate: false\n  xy: 84, 379\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_15\n  rotate: false\n  xy: 84, 519\n  size: 81, 69\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_23\n  rotate: false\n  xy: 84, 519\n  size: 81, 69\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_31\n  rotate: false\n  xy: 84, 519\n  size: 81, 69\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_38\n  rotate: false\n  xy: 84, 519\n  size: 81, 69\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_16\n  rotate: false\n  xy: 254, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_24\n  rotate: false\n  xy: 254, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_32\n  rotate: false\n  xy: 254, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_17\n  rotate: false\n  xy: 337, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_25\n  rotate: false\n  xy: 337, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_33\n  rotate: false\n  xy: 337, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_18\n  rotate: false\n  xy: 420, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_26\n  rotate: false\n  xy: 420, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_34\n  rotate: false\n  xy: 420, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_19\n  rotate: false\n  xy: 252, 520\n  size: 81, 69\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_27\n  rotate: false\n  xy: 252, 520\n  size: 81, 69\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_35\n  rotate: false\n  xy: 252, 520\n  size: 81, 69\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_20\n  rotate: false\n  xy: 2, 378\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_28\n  rotate: false\n  xy: 2, 378\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_36\n  rotate: false\n  xy: 2, 378\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_39\n  rotate: false\n  xy: 503, 591\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_40\n  rotate: true\n  xy: 586, 580\n  size: 81, 70\n  orig: 83, 72\n  offset: 1, 1\n  index: -1\nfrog_wrap_41\n  rotate: false\n  xy: 84, 449\n  size: 81, 68\n  orig: 83, 72\n  offset: 1, 2\n  index: -1\nfrog_wrap_42\n  rotate: false\n  xy: 165, 379\n  size: 79, 68\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_43\n  rotate: false\n  xy: 569, 300\n  size: 79, 67\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_44\n  rotate: false\n  xy: 83, 310\n  size: 79, 67\n  orig: 83, 72\n  offset: 2, 2\n  index: -1\nfrog_wrap_45\n  rotate: false\n  xy: 243, 242\n  size: 79, 66\n  orig: 83, 72\n  offset: 2, 3\n  index: -1\nfrog_wrap_46\n  rotate: false\n  xy: 81, 105\n  size: 77, 66\n  orig: 83, 72\n  offset: 3, 3\n  index: -1\nfrog_wrap_47\n  rotate: false\n  xy: 297, 176\n  size: 77, 64\n  orig: 83, 72\n  offset: 3, 4\n  index: -1\nfrog_wrap_48\n  rotate: true\n  xy: 203, 6\n  size: 77, 64\n  orig: 83, 72\n  offset: 3, 4\n  index: -1\nfrog_wrap_00\n  rotate: true\n  xy: 203, 6\n  size: 77, 64\n  orig: 83, 72\n  offset: 3, 4\n  index: -1\n",
+  "textures": [
+    {
+      "__uuid__": "6d939071-70d9-4723-8848-59fd5750d8fd"
+    }
+  ],
+  "textureNames": [
+    "frog.png"
+  ],
+  "scale": 1
+}

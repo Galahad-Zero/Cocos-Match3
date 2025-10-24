@@ -1,0 +1,62 @@
+
+effect.png
+size: 784,784
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bomb_white
+  rotate: false
+  xy: 2, 614
+  size: 770, 81
+  orig: 774, 82
+  offset: 2, 1
+  index: -1
+bomb_yellow
+  rotate: false
+  xy: 2, 482
+  size: 780, 130
+  orig: 780, 130
+  offset: 0, 0
+  index: -1
+destroy_light_10
+  rotate: true
+  xy: 2, 743
+  size: 39, 41
+  orig: 39, 42
+  offset: 0, 0
+  index: -1
+destroy_light_11
+  rotate: false
+  xy: 45, 728
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+destroy_light_12
+  rotate: false
+  xy: 101, 707
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+destroy_light_13
+  rotate: false
+  xy: 178, 704
+  size: 78, 78
+  orig: 79, 80
+  offset: 1, 1
+  index: -1
+destroy_light_14
+  rotate: true
+  xy: 258, 701
+  size: 81, 82
+  orig: 81, 82
+  offset: 0, 0
+  index: -1
+destroy_light_15
+  rotate: true
+  xy: 342, 697
+  size: 85, 86
+  orig: 85, 87
+  offset: 0, 1
+  index: -1

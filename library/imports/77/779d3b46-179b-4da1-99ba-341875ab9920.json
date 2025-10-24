@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "readme",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "# 游戏状态机\r\n1. Ready：准备完成\r\n2. playing：游玩中\r\n3. checking：检查消除\r\n4. Eliminating: 消除,并释放特性\r\n5. dropping：随机产生并掉落\r\n6. gameOver: 游戏结束\r\n7. gameWin: 过关"
+}
