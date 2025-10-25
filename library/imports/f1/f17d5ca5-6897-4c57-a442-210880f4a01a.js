@@ -29,6 +29,10 @@ let LevelBtn = class LevelBtn extends cc.Component {
     getLevelInfo() {
         return this.levelInfo.json;
     }
+    setBtnActive(active) {
+        const btn = this.getComponent(cc.Button);
+        btn.interactable = active;
+    }
 };
 __decorate([
     property(cc.JsonAsset)

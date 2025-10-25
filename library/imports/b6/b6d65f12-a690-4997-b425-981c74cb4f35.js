@@ -17,13 +17,39 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const const_1 = require("../const");
+const Utils_1 = require("../Utils");
+const LevelBtn_1 = require("./LevelBtn");
 const { ccclass, property } = cc._decorator;
 let LevelView = class LevelView extends cc.Component {
     onLoad() {
         this.node.on(const_1.EntryLevelEvent, this.onEntryLevel, this);
+        const hasSaveData = Utils_1.HasLocalData(const_1.UserSaveDataName);
+        if (!hasSaveData) {
+            Utils_1.setLocalData(const_1.UserSaveDataName, { maxLevelId: 0 });
+        }
+    }
+    start() {
+        this.adjustLevelBtns();
     }
     onEntryLevel(levelInfo) {
         console.log(levelInfo);
+    }
+    adjustLevelBtns() {
+        const levelBtns = this.getAllLevelBtns();
+        const userLevelInfo = Utils_1.getLocalData(const_1.UserSaveDataName);
+        const maxLevelId = userLevelInfo.maxLevelId;
+        levelBtns.forEach((levelBtn) => {
+            const levelInfo = levelBtn.getLevelInfo();
+            if (levelInfo.id <= maxLevelId + 1) {
+                levelBtn.setBtnActive(true);
+            }
+            else {
+                levelBtn.setBtnActive(false);
+            }
+        });
+    }
+    getAllLevelBtns() {
+        return this.node.getComponentsInChildren(LevelBtn_1.default);
     }
     onDestroy() {
         this.node.off(const_1.EntryLevelEvent, this.onEntryLevel, this);

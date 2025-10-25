@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.setLocalData = exports.getLocalData = exports.HasLocalData = void 0;
 function HasLocalData(name) {
     const str = cc.sys.localStorage.getItem(name);
-    return str !== '[object Object]';
+    return str && str !== '[object Object]';
 }
 exports.HasLocalData = HasLocalData;
 function getLocalData(name) {

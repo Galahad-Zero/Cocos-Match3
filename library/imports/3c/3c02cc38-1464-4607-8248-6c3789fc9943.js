@@ -21,6 +21,8 @@ const EffectMgr_1 = require("./effects/EffectMgr");
 const AudioMgr_1 = require("../AudioMgr");
 const BlockMgr_1 = require("./block/BlockMgr");
 const GameFsm_1 = require("./common/GameFsm");
+const Utils_1 = require("../Utils");
+const const_1 = require("../const");
 const { ccclass, property } = cc._decorator;
 let GameMgr = class GameMgr extends cc.Component {
     constructor() {
@@ -291,6 +293,13 @@ let GameMgr = class GameMgr extends cc.Component {
         // 显示过关界面
         this.gameUI.showGameWinPanel();
         this.audioMgr.stopMusic();
+        // 更新最大关卡ID
+        const saveData = Utils_1.getLocalData(const_1.UserSaveDataName);
+        if (saveData.maxLevelId < this.playPanel.getLevelConfig().id) {
+            Utils_1.setLocalData(const_1.UserSaveDataName, {
+                maxLevelId: this.playPanel.getLevelConfig().id,
+            });
+        }
         this.touchHandler.setEnabled(false);
     }
     /**

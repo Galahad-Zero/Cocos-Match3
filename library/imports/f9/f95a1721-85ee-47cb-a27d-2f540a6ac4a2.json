@@ -1,11 +1,12 @@
 {
   "__type__": "cc.JsonAsset",
-  "_name": "Level_1 - 001",
+  "_name": "Level_2",
   "_objFlags": 0,
   "_native": "",
   "json": {
+    "id": 2,
     "stepLimit": 10,
-    "targetScore": 100,
+    "targetScore": 1000,
     "gameMap": {
       "width": 6,
       "height": 8,

@@ -13,6 +13,7 @@ import {
     GameCheckInfo,
     LevelConfig,
     Location,
+    UserLevelInfo,
 } from './GameTypes';
 import { getSwapLocation, isNeighborLocation } from './common/GameUtils';
 import {
@@ -24,6 +25,8 @@ import EffectMgr from './effects/EffectMgr';
 import AudioMgr from '../AudioMgr';
 import BlockMgr from './block/BlockMgr';
 import GameFsm, { GameState } from './common/GameFsm';
+import { getLocalData, setLocalData } from '../Utils';
+import { UserSaveDataName } from '../const';
 
 const { ccclass, property } = cc._decorator;
 
@@ -341,6 +344,13 @@ export default class GameMgr extends cc.Component {
         // 显示过关界面
         this.gameUI.showGameWinPanel();
         this.audioMgr.stopMusic();
+        // 更新最大关卡ID
+        const saveData = getLocalData<UserLevelInfo>(UserSaveDataName);
+        if (saveData.maxLevelId < this.playPanel.getLevelConfig().id) {
+            setLocalData(UserSaveDataName, {
+                maxLevelId: this.playPanel.getLevelConfig().id,
+            });
+        }
         this.touchHandler.setEnabled(false);
     }
 

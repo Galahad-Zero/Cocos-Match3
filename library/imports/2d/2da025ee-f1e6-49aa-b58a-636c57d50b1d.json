@@ -4,8 +4,9 @@
   "_objFlags": 0,
   "_native": "",
   "json": {
+    "id": 1,
     "stepLimit": 10,
-    "targetScore": 1000,
+    "targetScore": 500,
     "gameMap": {
       "width": 6,
       "height": 8,

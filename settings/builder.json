@@ -4,9 +4,9 @@
   "startScene": "5db98a83-4917-404e-afff-9e5fedd966ad",
   "excludeScenes": [],
   "orientation": {
-    "landscapeRight": true,
-    "landscapeLeft": true,
-    "portrait": false,
+    "landscapeRight": false,
+    "landscapeLeft": false,
+    "portrait": true,
     "upsideDown": false
   },
   "webOrientation": "landscape",
@@ -16,7 +16,7 @@
   "mainIsRemote": false,
   "optimizeHotUpdate": false,
   "md5Cache": true,
-  "nativeMd5Cache": true,
+  "nativeMd5Cache": false,
   "encryptJs": true,
   "xxteaKey": "f8be0805-e8b7-4f",
   "zipCompressJs": true,
@@ -38,8 +38,8 @@
   },
   "win32": {
     "REMOTE_SERVER_ROOT": "",
-    "width": 1280,
-    "height": 720
+    "width": 720,
+    "height": 1280
   },
   "android-instant": {
     "packageName": "org.cocos2d.demo",
@@ -56,5 +56,6 @@
     "jsEngine": "JSVM"
   },
   "appBundle": false,
-  "agreements": {}
+  "agreements": {},
+  "includeAnySDK": false
 }

@@ -24,4 +24,9 @@ export default class LevelBtn extends cc.Component {
     public getLevelInfo(): LevelConfig {
         return this.levelInfo.json;
     }
+
+    public setBtnActive(active: boolean): void {
+        const btn = this.getComponent(cc.Button);
+        btn.interactable = active;
+    }
 }

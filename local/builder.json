@@ -4,7 +4,7 @@
   "template": "link",
   "buildPath": "./build",
   "debug": true,
-  "sourceMaps": false,
+  "sourceMaps": true,
   "embedWebDebugger": false,
   "previewWidth": 720,
   "previewHeight": 1280,
@@ -13,8 +13,10 @@
   "keystorePassword": "",
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
-  "apiLevel": "",
-  "appABIs": [],
-  "vsVersion": "auto",
+  "apiLevel": "android-28",
+  "appABIs": [
+    "arm64-v8a"
+  ],
+  "vsVersion": "2017",
   "buildScriptsOnly": false
 }

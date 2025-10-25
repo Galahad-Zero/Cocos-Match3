@@ -37,6 +37,10 @@ export enum EliminateScore {
     Irregular5Score = 100, // 异形5连消得分
 }
 
+export interface UserLevelInfo {
+    maxLevelId: number; // 最大关卡ID
+}
+
 // 游戏配置
 export interface GameConfig {
     level: string;
@@ -45,6 +49,7 @@ export interface GameConfig {
 
 // 关卡配置
 export interface LevelConfig {
+    id: number; // 关卡ID
     stepLimit: number; // 步数限制
     targetScore: number; // 目标分数
     gameMap: GameMap; // 游戏地图

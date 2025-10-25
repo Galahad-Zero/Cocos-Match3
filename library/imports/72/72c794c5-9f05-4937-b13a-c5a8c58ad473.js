@@ -124,16 +124,58 @@ let PlayPanel = class PlayPanel extends cc.Component {
         // 按行分类,同一行内不满三个的方块，需要排除
         rowSet.forEach((row) => {
             const rowLocations = contiguousLocations.filter((location) => location.row === row);
-            if (rowLocations.length >= 3) {
-                validContiguousLocations.push(...rowLocations);
+            // 按列从小到大排序
+            rowLocations.sort((a, b) => a.column - b.column);
+            // 只保留相连的位置，且至少三个
+            let linkedValidRowLocations = [rowLocations[0]];
+            for (let i = 1; i < rowLocations.length; i++) {
+                const location = rowLocations[i];
+                if (location.column - rowLocations[i - 1].column === 1) {
+                    // 相连，则加入连续方块列表
+                    linkedValidRowLocations.push(location);
+                }
+                else {
+                    // 不相连，则清空连续方块列表
+                    if (linkedValidRowLocations.length >= 3) {
+                        validContiguousLocations.push(...linkedValidRowLocations);
+                    }
+                    linkedValidRowLocations = [];
+                }
             }
+            if (linkedValidRowLocations.length >= 3) {
+                validContiguousLocations.push(...linkedValidRowLocations);
+            }
+            // if (rowLocations.length >= 3) {
+            //     validContiguousLocations.push(...rowLocations);
+            // }
         });
         // 按列分类,同一列内不满三个的方块，需要排除
         columnSet.forEach((column) => {
             const columnLocations = contiguousLocations.filter((location) => location.column === column);
-            if (columnLocations.length >= 3) {
-                validContiguousLocations.push(...columnLocations);
+            // 按行从小到大排序
+            columnLocations.sort((a, b) => a.row - b.row);
+            // 只保留相连的位置，且至少三个
+            let linkedValidColumnLocations = [
+                columnLocations[0],
+            ];
+            for (let i = 1; i < columnLocations.length; i++) {
+                const location = columnLocations[i];
+                if (location.row - columnLocations[i - 1].row === 1) {
+                    linkedValidColumnLocations.push(location);
+                }
+                else {
+                    if (linkedValidColumnLocations.length >= 3) {
+                        validContiguousLocations.push(...linkedValidColumnLocations);
+                    }
+                    linkedValidColumnLocations = [];
+                }
             }
+            if (linkedValidColumnLocations.length >= 3) {
+                validContiguousLocations.push(...linkedValidColumnLocations);
+            }
+            // if (columnLocations.length >= 3) {
+            //     validContiguousLocations.push(...columnLocations);
+            // }
         });
         // 去重
         return [...new Set(validContiguousLocations)];
