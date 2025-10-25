@@ -500,8 +500,8 @@
     "relativePath": "model\\primitives.fbx"
   },
   "ff58dd24-fb54-43ec-8ac4-348067490e23": {
-    "asset": 1761273648965,
-    "meta": 1761284470595,
+    "asset": 1761375012753,
+    "meta": 1761377481908,
     "relativePath": "LevelConfig"
   },
   "cc09c108-bc00-44e5-9873-d76decf37444": {
@@ -550,8 +550,8 @@
     "relativePath": "Script\\gamePlay"
   },
   "10646ddd-41ef-4d8d-b35a-10cc67b7bb88": {
-    "asset": 1761306073106,
-    "meta": 1761306073110,
+    "asset": 1761376302830,
+    "meta": 1761376302834,
     "relativePath": "Scene\\Game.fire"
   },
   "8db45a7d-b46b-4574-9ea8-742224017a22": {
@@ -580,8 +580,8 @@
     "relativePath": "Script\\gamePlay\\block"
   },
   "cc2c6a2b-54d7-4146-9341-81d84ab81e1c": {
-    "asset": 1761375016754,
-    "meta": 1761375016758,
+    "asset": 1761375666928,
+    "meta": 1761375666932,
     "relativePath": "Scene\\LevelSelect.fire"
   },
   "aa18e7c7-2e82-4fbf-9742-3477f8796293": {
@@ -618,11 +618,6 @@
     "asset": 1761273649009,
     "meta": 1761284470867,
     "relativePath": "Script\\type\\ConfigTypes.ts"
-  },
-  "08e0f446-0398-405c-b408-f766fc9b5012": {
-    "asset": 1761273648998,
-    "meta": 1761284470966,
-    "relativePath": "Script\\gamePlay\\block\\BaseBlock.ts"
   },
   "2421e3f0-b2be-45fa-9374-a84da9b6f917": {
     "asset": 1761273648998,
@@ -665,8 +660,8 @@
     "relativePath": "Script\\gamePlay\\common\\SpineUtils.ts"
   },
   "5db98a83-4917-404e-afff-9e5fedd966ad": {
-    "asset": 1761371351191,
-    "meta": 1761371351196,
+    "asset": 1761377531677,
+    "meta": 1761377531684,
     "relativePath": "Scene\\Menu.fire"
   },
   "250f7727-9a1b-4b8c-b555-49f5ab3785f0": {
@@ -1093,5 +1088,10 @@
     "asset": 1761375065537,
     "meta": 1761375070086,
     "relativePath": "Script\\gamePlay\\GameMgr.ts"
+  },
+  "08e0f446-0398-405c-b408-f766fc9b5012": {
+    "asset": 1761377400256,
+    "meta": 1761377407170,
+    "relativePath": "Script\\gamePlay\\block\\BaseBlock.ts"
   }
 }
