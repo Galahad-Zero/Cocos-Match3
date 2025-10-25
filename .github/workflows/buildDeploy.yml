@@ -6,6 +6,8 @@ on:
 
 permissions:
     contents: write
+    pages: write
+    id-token: write
 
 jobs:
     deploy:
@@ -13,8 +15,19 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Deploy
+            - name: Check if build directory exists
+              run: |
+                  if [ ! -d "./build/web-desktop" ]; then
+                      echo "错误: ./build/web-desktop 目录不存在"
+                      echo "请先在本地构建项目并提交 build/web-desktop 目录"
+                      exit 1
+                  fi
+                  echo "构建目录存在，包含以下文件:"
+                  ls -la ./build/web-desktop
+
+            - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v3
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./build/web-desktop # 你的构建输出目录
+                  publish_dir: ./build/web-desktop
+                  force_orphan: true
